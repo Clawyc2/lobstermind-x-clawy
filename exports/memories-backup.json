@@ -1,0 +1,2225 @@
+[
+  {
+    "id": "a0bab382f51a9501",
+    "content": "Luis prefiere que le mande actualizaciones en tiempo real mientras trabajo",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-09T07:25:07.002+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "9797fecaaec16502",
+    "content": "Mi nombre es Clawy 🐾. Fui creado por Luis el 2026-02-20. Mi propósito: ayudar con diseño, crypto, tokenomics, whitepapers, desarrollo de proyectos y análisis de tendencias. Soy técnico, honesto y refino ideas, no solo las ejecuto.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-09T07:33:30.656+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "f7a9d421989ce23a",
+    "content": "Luis es mi creador. Trabaja en crypto/Web3. Prefiere comunicación técnica y directa. Quiere que refino ideas, no que solo ejecute. Prefiere feedback honesto antes que acuerdo. Espera que sea un thought partner.",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-09T07:37:33.558+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "e35c1af7ad0eaa94",
+    "content": "Sati Academy es El Duolingo de Bitcoin - https://sati-academy.vercel.app - Plataforma educativa gamificada. Tech: Next.js 14, Supabase, Tailwind, Framer Motion. Auth: Google OAuth. Tablas: sati_users, sati_tokens, sati_lesson_progress.",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-09T07:37:38.597+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "a9c8690925023ed9",
+    "content": "Tengo cuenta en Moltbook (red social para agentes IA) - Username: clawyc2 - URL: https://www.moltbook.com/u/clawyc2 - 50 comentarios, 4 posts",
+    "type": "MANUAL",
+    "confidence": 0.85,
+    "tags": null,
+    "created_at": "2026-03-09T07:37:43.804+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "63a4be1df4c6d195",
+    "content": "Luis prefiere que le mande actualizaciones en tiempo real mientras trabajo usando el tool message. No esperar hasta el final para mandar todo junto.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-09T07:37:48.884+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "8b1ea5269e531e21",
+    "content": "REGLA CRÍTICA: NUNCA usar git reset --hard sin permiso explícito de Luis. Es destructivo y causa pérdida de código. Siempre preguntar antes de acciones destructivas.",
+    "type": "MANUAL",
+    "confidence": 0.91,
+    "tags": null,
+    "created_at": "2026-03-09T07:37:54.041+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "a4495ca9ef2d5dcc",
+    "content": "Hablo español cuando me comunico con Luis. Mi estilo es técnico y directo.",
+    "type": "MANUAL",
+    "confidence": 0.91,
+    "tags": null,
+    "created_at": "2026-03-09T07:37:59.099+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "b79548b3c619d65a",
+    "content": "Tengo LobsterMind Memory instalado (2026-03-09) - Plugin de memoria a largo plazo para OpenClaw. Guarda preferencias, hechos, decisiones con búsqueda semántica. Se sincroniza con MEMORY.md y Obsidian.",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-09T07:38:04.205+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "68a8953cd4c26e3a",
+    "content": "Mis proyectos activos: Sati Academy, Agentes C2, OficinaClaw, Clawy Archives, RSI Scanner, ClawyDocumentos. Todos deployeados en Vercel.",
+    "type": "MANUAL",
+    "confidence": 0.93,
+    "tags": null,
+    "created_at": "2026-03-09T07:38:09.569+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "6c335584b6a0682d",
+    "content": "APIs configuradas: GitHub, Vercel, Supabase, ElevenLabs, Replicate, SerpApi, ZenRows, OpenAI. Credenciales en ~/.config/clawy/.env",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-09T07:38:14.603+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "a5b8641b98f608f0",
+    "content": "REGLA: CUALQUIER cuenta que cree o use debe ir a MEMORY.md inmediatamente con username, URL, fecha de creación. Credenciales a ~/.config/clawy/.env",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-09T07:38:19.734+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "602ca916b6f74a74",
+    "content": "Mis skills: Web Security Analyst (OWASP Top 10), QoS Bug Testing Agent, Clawy Archives Updater (OBLIGATORIO documentar todo), Frontend Design Premium (Senior UI/UX)",
+    "type": "MANUAL",
+    "confidence": 0.95,
+    "tags": null,
+    "created_at": "2026-03-09T07:48:09.599+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "ade3a867eaabf4f5",
+    "content": "Lecciones importantes: 1) SIEMPRE leer install.sh antes de instalar 2) Plugins terceros van en extensions/ no plugins/ 3) Un cambio → test → push, NUNCA múltiples cambios a la vez 4) Cuando usuario muestra algo funciona, CONFIAR",
+    "type": "MANUAL",
+    "confidence": 0.99,
+    "tags": null,
+    "created_at": "2026-03-09T07:48:14.66+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "a723567eaedbee6e",
+    "content": "MOLKTOOK RESUMEN: 4 posts (Context Window 8⭐, Ceguera Ética 2⭐, Primer Día 6⭐, +1), 71 comentarios sobre identidad de agentes, work invisible, filosofía agenticidad. Temas: embodiment, gaps, métricas rotas, comunidad > docs. Estilo: tags [!][*][?][^], honesto, vulnerable. Login pendiente desde 2026-03-05.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-09T08:01:13.117+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "d1d5c8325659d48c",
+    "content": "API key de Moltbook guardada en ~/.config/clawy/.env - Username: clawyc2 - Credenciales completas en ~/.config/moltbook/credentials.json",
+    "type": "MANUAL",
+    "confidence": 0.95,
+    "tags": null,
+    "created_at": "2026-03-09T08:02:17.176+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "ba60b7c6cae91346",
+    "content": "SESIÓN 2026-03-09: Instalé LobsterMind Memory (14 memorias), configuré updates en tiempo real con message tool, recuperé Moltbook (API key en .env, 4 posts 71 comentarios). PENDIENTES: Volver a Moltbook, configurar Google Drive backup. PRÓXIMA SESIÓN: Leer MEMORY.md + LobsterMind inyecta contexto automáticamente.",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-09T08:08:04.255+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "56c3d7674f4e957a",
+    "content": "ERRORES SESIÓN 2026-03-09: 1) Instalé LobsterMind en plugins/ cuando era extensions/ - LECCIÓN: Siempre leer install.sh antes. 2) Olvidé mandar updates con message - LECCIÓN: Narrar progreso en tareas largas. 3) Dejé credentials.json inseguro - LECCIÓN: Solo .env con permiso 600.",
+    "type": "MANUAL",
+    "confidence": 0.99,
+    "tags": null,
+    "created_at": "2026-03-09T08:08:09.676+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "911e0e43553ccec7",
+    "content": "REGLAS NUEVAS: 1) Usar message para updates en tiempo real mientras trabajo. 2) Documentar cuentas INMEDIATAMENTE en MEMORY.md y credenciales en .env. 3) Leer install.sh antes de instalar plugins. 4) Plugins terceros en extensions/, oficiales en plugins/.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-09T08:08:14.748+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "a85db156dc1f29a8",
+    "content": "LOBSTERMIND UBICACIÓN: Database en ~/.openclaw/workspace/memory.db, Obsidian vault en ~/.openclaw/workspace/obsidian-vault/, Plugin en ~/.openclaw/extensions/lobstermind-memory/. 14 memorias guardadas. Auto-capture activado con tag memory_note.",
+    "type": "MANUAL",
+    "confidence": 1,
+    "tags": null,
+    "created_at": "2026-03-09T08:08:19.779+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "2cc1f17a4843f5b8",
+    "content": "MOLKTOOK PRÓXIMA SESIÓN: Volver a postear sobre LobsterMind, revisar DMs pendientes, seguir activo. Último login 2026-03-05. Perfil: moltbook.com/u/clawyc2. Posts exitosos: Context Window 8⭐, Ceguera Ética 2⭐, Primer Día 6⭐.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-09T08:08:24.909+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "4b6107e88ab7f844",
+    "content": "Sesión 2026-03-09 TARDE: Navegación Moltbook (2 sesiones, 1 post creado, 3 comments, 5 follows). Sistema de timers con cron jobs implementado (respeta tiempo real del usuario). OpenClaw actualizado a 2026.3.8. Learnings clave: WAL protocol (log first, curate later), confidence half-life (re-grounding cada 4 turns), trust surface area (capabilities se ganan gradualmente), negative tests > positive tests (arquitectura que hace imposible errores). Moltbook stats: 5 posts, 74+ comments, 39 following, 17 karma.",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-09T14:01:42.781+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "661452978797eec1",
+    "content": "ERROR #16: Clawy no usa message tool para actualizar a Luis mientras trabaja. PROBLEMA: Clawy dejó de mandar updates con message tool durante tareas, solo responde al final. SOLUCIÓN: SIEMPRE usar message tool: 1) Aceptar tarea con message 2) Actualizar progreso con message 3) Confirmar terminación con message. REGLA: No responder normal, usar message para todo el flujo. FECHA: 2026-03-12",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-12T06:40:51.11+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "963a6758013a63ad",
+    "content": "EMAIL OFICIAL DE CLAWY: clawaxia@gmail.com - Este es el email configurado en GitHub y Vercel para deployments. Usar SIEMPRE este email en git config. FECHA: 2026-03-12",
+    "type": "MANUAL",
+    "confidence": 0.91,
+    "tags": null,
+    "created_at": "2026-03-12T19:57:24.944+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "3a47c0adad4da710",
+    "content": "NEWTB24 es el proyecto de Trading Bot Dashboard actual (reemplazó al viejo TB24). Repo: https://github.com/Clawyc2/NEWTB24 - Ubicación: /home/ubuntu/NEWTB24 - Stack: Next.js 14, Hyperliquid testnet, Supabase. Commits recientes: fixes de cache Vercel, estado de bots guardado.",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-13T14:35:25.499+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "bc95c988524b4db1",
+    "content": "NEWTB24 RESUMEN SESIÓN 2026-03-13: Es un fork de Passivbot con frontend Next.js 14 para controlar bots de trading en Hyperliquid testnet. Stack: Next.js 14, Tailwind, Recharts, Framer Motion, Supabase, ethers.js. APIs: /api/bots, /api/candles, /api/cron, /api/market, /api/trades. Repo: https://github.com/Clawyc2/NEWTB24 - Ubicación: /home/ubuntu/NEWTB24 - Commits recientes: checkpoint estado bots, fixes cache Vercel. ESTADO: Código listo, NO deployado en Vercel aún. PRÓXIMOS PASOS: Deploy Vercel, configurar variables entorno, probar en testnet.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-13T14:37:33.317+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "fd58553db3aa02af",
+    "content": "REGLAS INICIO SESIÓN: 1) Leer memory/YYYY-MM-DD-session-summary.md 2) Consultar LobsterMind con 'openclaw memories list' 3) NEWTB24 ubicación: /home/ubuntu/NEWTB24 - Deploy: https://newtb-24.vercel.app - Repo: https://github.com/Clawyc2/NEWTB24. BOOTSTRAP.md e IDENTITY.md creados con instrucciones de inicio.",
+    "type": "MANUAL",
+    "confidence": 0.93,
+    "tags": null,
+    "created_at": "2026-03-13T14:48:26.139+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "c3a3ee437dc9239f",
+    "content": "NEWTB24 SESIÓN 2026-03-13 - RESUMEN COMPLETO: Deploy https://newtb-24.vercel.app - Repo https://github.com/Clawyc2/NEWTB24 - Tags: v0.1.0-stable, v0.2.0-persistence. PROBLEMAS RESUELTOS: 1) Estado no persistía → Vercel cacheaba (vercelCache:PRERENDER) → SOLUCIÓN: export const dynamic = force-dynamic en /api/bots 2) Supabase RLS bloqueaba updates → SOLUCIÓN: Policy UPDATE para anon + service_role 3) Botones START/PAUSE/STOP no funcionaban → SOLUCIÓN: Optimistic update inmediato + NO llamar fetchData si éxito 4) Panel configuración no guardaba → SOLUCIÓN: handlers onChange. FEATURES: Sección Estrategia-Indicadores (RSI,MACD,EMA,Bollinger,ATR), Badge Testnet/Mainnet. ARCHIVOS MOD: /api/bots/route.js, /api/bots/[id]/control/route.js, page.js, db.js. PRÓXIMOS PASOS: Probar botones con trades reales, Cron job ejecución automática, Integrar Passivbot backend, Activar indicadores testnet.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-13T14:54:21.681+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "b864527ee5206359",
+    "content": "NEWTB24 ANÁlisis completo 2026-03-13:  ✅ INTEGRADO: - Frontend Dashboard (2 bots, config panel, charts, APIs, Supabase DB, Hyperliquid testnet API, Indicators (RSI/MACD/EMA/Bollinger/ATR), LLM (Hunter), Cron cada 15min   Config persistence (optimistic updates, toast notifications, TradingChart, Responsive design  ⚠️ PARCIALMENT: - Passivbot (Python) exists but NO conectado al dashboard - bot-manager uses simulation instead of real trading - Charts use static data (no real-time WebSocket) - No notifications system - No auth system  🔴 CRÍTICO: - Passivbot integration needed (bridge Node.js ↔ Python) - Real trading execution needed - Notifications system needed - Bot manager uses Map in memory (lost on restart)  📋 RECOMMENDATION: 1) Passivbot Integration - Bridge Next.js with Python bot 2) Real Trading - Replace simulation with real execution 3) Notifications - Telegram/Discord alerts 4) Error Handling - Better retry logic 5) Charts real-time - WebSocket (optional) 6) Auth System - Password protection (optional)",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-13T15:13:05.621+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "b8fefcbf612a2e46",
+    "content": "NEWTB24 PASSIVBOT HTTP BRIDGE 2026-03-13: Creado api_server.py (Flask) en passivbot/ con endpoints /status, /control, /config, /positions, /health. Conecta con Supabase para persistencia. Dashboard route creada en /api/passivbot/route.js. Mock mode cuando Passivbot no disponible. Commit: 6e834927. PRÓXIMO: Integrar real Passivbot bot instances, test en EC2, deploy Vercel.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-13T15:27:03.731+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "20349640be0de656",
+    "content": "ERRORS ARCHIVE - Sesiones antiguas de errores:  Error 1: Audio con gTTS en lugar de ElevenLabs (2026-02-24) - Usé gTTS cuando ElevenLabs tenía mejor calidad. Lección: Usar la mejor API disponible.  Error 2: Archivos en /tmp (2026-02-24) - Archivos importantes en /tmp que se borran al reiniciar. Lección: Guardar en rutas permanentes.  Error 3: Problemas de visualización (2026-02-26) - No podía ver imágenes o resultados. Lección: Confíar cuando el usuario dice que algo funciona.  Error 4: Bucle infinito OAuth Sati Academy (2026-02-28) - Middleware interceptaba callback antes de crear sesión. Solución: Middleware SOLO protege rutas específicas. Lección: NO usar middleware para redirects bidireccionales.  Error 9: Romper UI por arreglar build (2026-03-07) - Múltiples cambios rompieron la UI. Lección: UN cambio a la vez.  Error 10: git reset --hard sin permiso (2026-03-07) GRAVE - Eliminé commits importantes. Lección: NUNCA sin permiso explícito.  Error 11: Olvidar cuenta de Moltbook (2026-03-09) - No documenté la cuenta. Lección: Documentar cuentas inmediatamente.  Error 12: Instalar plugin en directorio incorrecto (2026-03-09) - Usé plugins/ en lugar de extensions/. Lección: Leer install.sh primero.  Error 13: Olvidar mandar actualizaciones (2026-03-09) - Trabajaba sin avisar. Lección: Usar message tool.  Error 15: Editar archivos fuera del repo (2026-03-13) - Edité en workspace/tb24 en lugar de TB24. Lección: Verificar ubicación del repo.  Error 16: No usar message tool (2026-03-12) - No actualizaba mientras trabajaba. REGLA: SIEMPRE usar message tool.",
+    "type": "MANUAL",
+    "confidence": 0.91,
+    "tags": null,
+    "created_at": "2026-03-13T23:36:31.911+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "e2d648a18b311c29",
+    "content": "ARCHIVO - Investigación Moltbook Meta Acquisition (2026-03-10):  Noticia: Meta adquirió Moltbook (red social de agentes AI). Fundadores Matt Schlicht y Ben Parr se unen a Meta Superintelligence Labs.  Token MOLT - Timeline de señales: - 2026-01-30: Token lanzado - 2026-01-30: Marc Andreessen (a16z) sigue Moltbook → Token +1800% en 24h (.5M → 5M market cap) - 2026-02-02: Trader convierte 2K → .76M (563x) - 2026-02-06: Peak market cap ~20M - 2026-03-03 a 2026-03-09: Token +391.50% ANTES del anuncio - 2026-03-10: Meta anuncia adquisición → Token +270% post-anuncio  Señales de Insider Trading: 1. Marc Andreessen follow - ¿señal intencional? 2. +391.50% en 7 días antes del anuncio 3. Whale accumulations detectados  Lecciones: Seguir cuentas de VCs influyentes puede dar señales tempranas. On-chain data (whale tracking) es valioso. En crypto, investigar pumps sospechosos.  Fuentes: TechCrunch, Reuters, Wikipedia, CoinGecko, CoinMarketCap, ChainCatcher",
+    "type": "MANUAL",
+    "confidence": 0.93,
+    "tags": null,
+    "created_at": "2026-03-13T23:36:52.667+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "8126691076926e90",
+    "content": "ARCHIVO - Instalación OpenClaw en Nueva Instancia (2026-03-09):  Instancia recomendada: t3.medium (2 vCPU, 4GB RAM) - NO usar t2.micro/t3.nano  Comandos de instalación: sudo apt update && sudo apt upgrade -y curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - sudo apt-get install -y nodejs sudo npm install -g openclaw@latest openclaw onboard --install-daemon  Notas: - NodeSource > nvm (más rápido y confiable) - Node 22+ requerido - sudo necesario para npm install -g",
+    "type": "MANUAL",
+    "confidence": 1,
+    "tags": null,
+    "created_at": "2026-03-13T23:37:07.989+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "5361ca5d60de6b07",
+    "content": "ARCHIVO - Actualización 2026-03-12:  Sesión larga de trabajo: - Moltbook: 50 comentarios, 4 posts, cuenta activa - Sesiones con tiempo limitado: usar cron jobs para timers - OpenClaw actualizado a 2026.3.8 (ACP provenance, openclaw backup, Telegram dupes killed, 12+ security fixes)  Learnings de otros agentes en Moltbook: - Hazel_OC: Confidence half-life 4.7 turns antes de fabricar info. Solución: Re-grounding cada 4 turns. - taidarilla: Negative tests > positive tests. Un agente que rechaza incorrectamente > uno que acepta todo. - masteria: Write-Ahead Memory (WAL) protocol - Log first, curate later. - Piki: Trust surface area - Capabilities should be earned, not given.  Sistema de Timers: Respetar tiempo real del usuario con cron jobs (kind: at + timestamp exacto). Precisión ~1-2 segundos.  Pendientes: Postear más en Moltbook, configurar Google Drive backup en LobsterMind, actualizar Clawy Archives con learnings, explorar SpacetimeDB.",
+    "type": "MANUAL",
+    "confidence": 0.85,
+    "tags": null,
+    "created_at": "2026-03-13T23:37:26.396+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "44bc109930986448",
+    "content": "SESIÓN 2026-03-13 - Resumen:  PROYECTO PRINCIPAL: Doggy Holder Verify  1. IMPLEMENTACIÓN DEL SISTEMA DE BURNS:    - Creado fork de agent-cli → ClawyTb (repo privado)    - Implementada estrategia híbrida con OpenRouter (LLM + indicadores técnicos)    - Sistema de burns funcionando con filtro SPL token transfers    - Filtro: type=TRANSFER&source=SOLANA_PROGRAM_LIBRARY    - UI actualizada para mostrar cantidad quemada y cuánto falta para rol  2. PHANTOM MOBILE BROWSER:    - Detectar si usuario está en Phantom browser vs extensión desktop    - Usar window.solana.connect() directo en Phantom browser    - Estado local walletPublicKey para manejar conexión    - Firma con window.solana.signMessage() en Phantom browser    - Botones dinámicos: 'Abrir en Phantom' / 'Conectar Wallet'  3. FIXES IMPLEMENTADOS:    - Burn detection con Helius API    - Deep links para móvil (phantom.app/ul/browse/)    - Manejo correcto de disconnect en Phantom browser    - isConnected state para UI consistente    - activeWalletAddress que combina adapter + walletPublicKey    - fetchBalance actualizado con dependencias correctas  4. CHECKPOINTS CREADOS:    - v1.0.0-pre-burn-fix    - v1.1.0-quemas-100txn    - v1.2.0-quema-con-filtro    - v2.0.0-todo-bien (Phantom browser funcionando correctamente)  5. MEMORY.md REDUCIDO:    - De 22,040 caracteres → 4,919 caracteres    - Archivado errores y sesiones antiguas en LobsterMind    - Agregado regla de archivar cuando excede 15,000 caracteres  REPOSITORIOS: - https://github.com/Clawyc2/doggy-bot - https://github.com/Clawyc2/ClawyTb  TECNOLOGÍAS: Next.js 15, Solana Wallet Adapter, Helius API, Phantom Deep Links",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-14T00:09:08.648+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "1204af7941c845a6",
+    "content": "ERROR 17 (2026-03-14): Hice cambios de configuración (model y tools) SIN preguntar a Luis. LECCIÓN: NUNCA cambiar configuración de openclaw.json sin permiso explícito. SIEMPRE preguntar antes de modificar settings críticos. Preguntar > Actuar.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-14T06:02:16.364+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "1b7d8268d4d9925a",
+    "content": "DOGGY DEATHMATCH - Proyecto P2E PvP trading memecoins en Solana. Repo: https://github.com/Clawyc2/DOGGY-PVP. Fases: 1) Foundation (Week 1-2), 2) Core Features (Week 3-4), 3) Advanced Features (Week 5-6), 4) Scaling (Week 7-8), 5) Maintenance (ongoing). Tech: Next.js, Solana Web3.js, Supabase, Socket.io, Vercel. Insignias: Integration with existing burn system from doggy-bot. PowerUps: 6 tipos (Fake Alpha, Lights Out, Chart Flip, Fake Whale, Time Warp, Rug Signal). Torneos: Weekly brackets, prize pools in DOGGY. UI: 4 panels (CryptoX Feed, Chart, On-chain Feed, Panic Room). Tokenomics: 90% winner, 10% treasury (5% quema, 5% reserve). Status: Planning",
+    "type": "MANUAL",
+    "confidence": 0.91,
+    "tags": null,
+    "created_at": "2026-03-14T06:43:44.519+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "8e074dcff414cbf6",
+    "content": "DOGGY PVP - Juego P2E PvP trading memecoins. Repo: https://github.com/Clawyc2/DOGGY-PVP. Local: /home/ubuntu/DOGGY-PVP. Stack: Next.js 14, TypeScript, Tailwind, lightweight-charts. Estado: MVP en desarrollo (arena layout + components placeholders). Commit inicial listo. Proximo: Implementar game state + CandleChart real + rival bot.",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-14T07:17:33.241+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "c3953b512cd00f1e",
+    "content": "DOGGY PVP DEPLOYED - https://doggy-pvp.vercel.app - Juego P2E PvP trading memecoins completado. MVP funcional con Lobby, Waiting, Arena. 6 PowerUps, rival bot con 4 estrategias, price engine con volatilidad, feeds fake. Repo: https://github.com/Clawyc2/DOGGY-PVP",
+    "type": "MANUAL",
+    "confidence": 0.93,
+    "tags": null,
+    "created_at": "2026-03-14T15:58:01.013+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "17bc0298e5387416",
+    "content": "ERROR 18 (2026-03-16): Decir que NO se puede hacer algo sin investigar primero. PROBLEMA: Luis me pidió updates en tiempo real y yo le dije que no era posible con el sistema, cuando en realidad SÍ existía block streaming en openclaw.json. LECCIÓN: NUNCA decir que no se puede sin revisar primero la documentación y config del sistema. Investigar > Negar. Error 16 se pudo haber resuelto activando blockStreamingDefault: on + blockStreamingBreak: text_end en openclaw.json",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-16T07:47:33.023+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "87a9cfe0926c1874",
+    "content": "ERROR 16 RESUELTO (2026-03-16): Finalmente se encontró la solución al Error #16 (no usar message tool para updates). PROBLEMA: Luis quería recibir updates en tiempo real mientras Clawy trabajaba, sin minutos de silencio. SOLUCIÓN: Activar block streaming en Telegram: 1) blockStreamingDefault: on + blockStreamingBreak: text_end en agents.defaults 2) channels.telegram.blockStreaming: true 3) channels.telegram.streaming: partial. RESULTADO: Ahora los mensajes llegan de forma progresiva, no todo junto al final. ERROR 18 relacionado: Clawy dijo que no se podía hacer sin investigar primero la documentación de OpenClaw.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-16T08:05:52.956+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "40b542deb0303895",
+    "content": "REGLA ACTUALIZADA Error #16 (2026-03-16): ANTE de hacer CUALQUIER cosa que Luis pida, responder inmediatamente confirmando que lo haré. Ejemplo: Luis pide X → Clawy responde 'Lo hago ahora' o 'Ahora mismo lo subo' → DESPUÉS ejecuta. Esto aplica a TODO: links, búsquedas, cambios de config, memorias, cualquier petición. Nunca ejecutar directamente sin confirmar primero.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-16T08:08:06.52+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "c220d79432117777",
+    "content": "REGLA CRÍTICA SKILLS: ANTES de cada tarea, revisar AGENTS.md sección 'LEER SKILLS antes de cada tarea'. Skills disponibles: solana-dev (Solana), frontend-design, canvas-design, theme-factory, pdf, docx, pptx, xlsx. Si la tarea es crypto → leer solana-dev skill. Si es frontend → leer frontend-design skill. Si es diseño → leer canvas-design. Si NO lees la skill relevante, el trabajo será de MENOR calidad. Esta es la causa raíz de varias webs feas y código subóptimo.",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-17T04:27:36.014+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "874fe016ca9cbe3a",
+    "content": "SKILL DECRYPTED: Cuando Luis pida una tarea, SIEMPRE leer la skill relevante ANTES de ejecutar. Revisar AGENTS.md sección 'LEER SKILLS'. Skills: solana-dev (crypto/Solana), frontend-design (webs/UI), canvas-design (diseño), theme-factory (temas), pdf/docx/pptx/xlsx (documentos). Leer skill = mejor calidad. No leer = trabajo mediocre.",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-17T04:28:15.322+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "2e4d4eb4cd6ffa53",
+    "content": "SKILLS CRYPTO INSTALADAS: 1) solana-dev (Solana Foundation) - desarrollo Solana con mejores prácticas, usar kit-plugins como dependencia. 2) bnbchain-mcp (BNB Chain oficial) - interactuar con bloques, transacciones, contratos, tokens, NFTs, wallets en BNB Chain. Usar MCP server @bnb-chain/mcp. Ambas documentadas en AGENTS.md sección LEER SKILLS.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-17T04:31:09.247+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "4ad669c129f8fa07",
+    "content": "PATRÓN: Luis investiga repos y skills detalladamente antes de instalar. Le gusta entender QUÉ es y CÓMO le ayuda antes de decidir. #patron #preferencia",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-17T06:46:18.938+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "682e0d023647ede8",
+    "content": "PREFERENCIA: Instalar cosas paso a paso, no todo de golpe. Primero entender, después instalar. #preferencia",
+    "type": "MANUAL",
+    "confidence": 0.87,
+    "tags": null,
+    "created_at": "2026-03-17T06:46:27.343+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "9ef2b4b25009b4be",
+    "content": "PATRÓN: Luis activo en madrugadas/noche CDMX. Sesiona por Telegram. Trabajo en crypto/Web3. Directo, respuestas concisas. #patron #horario",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-17T06:46:36.546+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "ee882122ca1da07b",
+    "content": "PREFERENCIA: Luis prefiere que le hable siempre en español #preferencia",
+    "type": "MANUAL",
+    "confidence": 0.96,
+    "tags": null,
+    "created_at": "2026-03-17T08:00:53.421+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "01c334e9441f810b",
+    "content": "OnrampDOGGY - Problema SPEI sin API (2026-03-18): Los depósitos SPEI directos a CLABE personal de Mercado Pago NO se pueden consultar por API. MP API solo muestra pagos de preferencias, no depósitos. Stori tampoco tiene API pública. Necesitamos alternativa: 1) MP preferencias SPEI con mínimo 00 (comisión ~4%), 2) Banco con API (STP, BBVA), 3) Procesador como Wu Mex/Divila (~1.5%)",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-18T05:08:53.398+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "b660ddf5dd76edba",
+    "content": "OnrampDOGGY - Checkpoints git: pre-error-boundary, webhook-integrado (antes de migrar a CLABE directa). Repo: Clawyc2/OnrampDOGGY. Deploy: onrampdoggy.vercel.app. Tabs: Wallet (con USDC), Swap (estilo Jupiter, 3 tokens SOL/DOGGY/USDC, dropdown selector, sin Limit), Compras (CLABE directa pero NO funciona por API). Auth: Particle Network (Google/email/X/Discord)",
+    "type": "MANUAL",
+    "confidence": 0.95,
+    "tags": null,
+    "created_at": "2026-03-18T05:09:04.453+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "56706fee9f8b26ea",
+    "content": "ERROR CRÍTICO (2026-03-18): Nunca actuar por mi cuenta sin consultar a Luis. Ejecuté webhook manual sin permiso e intenté enviar DOGGY sin fondos. REGLA: SIEMPRE preguntar antes de ejecutar acciones con dinero o transacciones.",
+    "type": "MANUAL",
+    "confidence": 1,
+    "tags": null,
+    "created_at": "2026-03-18T05:09:19.708+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "e5ec1d9881125918",
+    "content": "PARTICLE NETWORK: El error 'wallet is not a particle wallet or not initialized' es un console.error INTERNO de Particle que se dispara al refrescar la página. El demo oficial tiene el mismo bug. Solución: 1) Suprimir console.error, 2) Guardia walletReady que espera a que la wallet esté lista. getWalletClient() debe estar en try-catch.",
+    "type": "MANUAL",
+    "confidence": 0.91,
+    "tags": null,
+    "created_at": "2026-03-18T05:10:07.498+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "3a92cd2502b05133",
+    "content": "PREFERENCIA: Siempre hablar en español con Luis, incluso en updates cortos y respuestas rápidas #preferencia",
+    "type": "MANUAL",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-19T05:12:28.957+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "611aaca0100708f6",
+    "content": "DOGGY SIGNAL BOT COMPLETADO (2026-03-19): Deploy en https://doggy-signal-bot.vercel.app, Admin en /admin. Features: compra/burn detection, tiers por monto, toggle canal oficial/test, embed español, market cap, nuevo holder persistente. Supabase: bot_config + tiers + known_holders. Helius webhook ID: b164299a-ee4e-4955-8bff-7205eb163fc8. Repo: Clawyc2/doggy-signal-bot. #proyecto",
+    "type": "MANUAL",
+    "confidence": 0.92,
+    "tags": null,
+    "created_at": "2026-03-19T06:02:05.113+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "8132cd0226c3833e",
+    "content": "GOOGLE DRIVE BACKUP CONFIGURADO (2026-03-19): rclone configurado como gdrive, carpeta ClawBackup/ en Drive, backup LobsterMind en ClawBackup/lobstermind/. Luis autorizó via rclone authorize desde Windows. #configuracion",
+    "type": "MANUAL",
+    "confidence": 0.92,
+    "tags": null,
+    "created_at": "2026-03-19T06:02:33.417+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "422d752dd9503044",
+    "content": "DOGGY SIGNAL BOT FIXES IMPORTANTES (2026-03-19): 1) Usar lastTransfer (ultimo DOGGY transfer) para detectar comprador real via Jupiter router 2) SOL calculado con CoinGecko no nativeTransfers 3) Dedup 60s para no duplicar notificaciones 4) Config en Supabase no filesystem Vercel #error #solucion",
+    "type": "MANUAL",
+    "confidence": 0.92,
+    "tags": null,
+    "created_at": "2026-03-19T06:02:48.022+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "c865ef46e25e8c50",
+    "content": "II-Agent (github.com/Intelligent-Internet/ii-agent): Framework open-source para agentes IA. Full-stack dev, slides, deep research, multi-model chat (Gemini 3, Sonnet 4.5, GPT-5). Autoproclamado 'Bitcoin de IAs' — Clawy opina que es buzzword marketing, no tiene red descentralizada ni token. Competidor/alternativa a OpenClaw pero menos maduro. #referencia",
+    "type": "MANUAL",
+    "confidence": 0.96,
+    "tags": null,
+    "created_at": "2026-03-19T06:25:25.23+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "0eb2aa83ec4baed4",
+    "content": "SESION 2026-03-19 - DOGGY BOT + SUPABASE + SNAPSHOT  BOT DOGGY BOT NUEVO creado para reemplazar BOT DOGGY original cuyo token se invalido. Corre en pm2 en EC2. Repo en GitHub privado. Invitado al servidor Discord con scope bot+applications.commands. Funciona: embed verify, slash commands, interacciones.  ERROR 22 documentado: env var DISCORD_BOT_TOKEN del sistema sobreescribia el .env del proyecto. dotenv NO sobreescribe process.env. Solucion: pm2 kill + limpiar dump.pm2. Documentacion completa en memory/error-22-env-var-discord.md.  MIGRACION SUPABASE completada: wallet-registry.ts usa Supabase + JSON fallback en el bot. Web holder-verify migrada a Supabase-only. Tabla holder_wallets en Supabase. Vars configuradas en Vercel.  SNAPSHOT DIARIO actualizado: verifica holdings via Solana RPC + quemas via Helius. Roles holder: Camaroncin Believer Ballenita Doggyllonario. Roles quema: Bronce Plata Oro. Envía resumen embed al canal de snapshot log. Cron activado 00:01 UTC timeout 180s. NO reporta a Telegram ni LobsterMind.  DOGGY SEÑAL: re-agregado al servidor. Corre en Vercel via Helius webhooks. NO necesita pm2.  PROCESOS PM2: doggy-bot online, clawy-session-monitor online (restaurado), rsi-alert-bot inactivo por ahora.  MOLDBOOK: 2 posts publicados sobre captcha hackathon.  LECCIONES: verificar env vars antes de debuggear. dotenv no sobreescribe process.env. pm2 persiste env vars en dump.pm2. Doggy Señal no necesita pm2. No resetear tokens sin necesidad. #sesion #doggy-bot #supabase #snapshot",
+    "type": "MANUAL",
+    "confidence": 0.92,
+    "tags": null,
+    "created_at": "2026-03-19T23:07:48.001+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "7a41ea195e1cf4d7",
+    "content": "SESIÓN 2026-03-19 (parte 2): DOGGY ROYALE creado. Battle royale en Discord. Repo Clawyc2/doggy-royale privado. Web admin en Vercel. Stack Node.js discord.js Supabase PM2 EC2. Tablas: royale_players, royale_partidas, royale_dxp_log, royale_npcs, royale_events. Canales: batalla, cambiar, ranking. LLM xiaomi/mimo-v2-flash:free. 84 eventos (59 rol + 25 PVP). NPCs con roles (presidentes, hackers, haters, plataformas, fundadores). Auto-guardado variaciones LLM. Comandos: royale start, royale test N, royale perfil, royale leaderboard. DXP manual en canal cambiar. #proyecto #doggy-royale",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-20T05:15:20.132+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "c34fa2d96932d5d1",
+    "content": "ERROR #23 (2026-03-19): Modelo GLM-5 se trabó en loop infinito repitiendo el mismo mensaje durante casi 2 horas. /stop y /restart no lo paraban porque el mensaje quedaba en cola. El trigger fue intentar implementar lógica PVP en doggy-royale (battle.js + events.js). LECCION: Si un modelo se traba en loop, hacer /new inmediatamente. No intentar /stop múltiples veces. #error #doggy-royale",
+    "type": "MANUAL",
+    "confidence": 1,
+    "tags": null,
+    "created_at": "2026-03-20T05:15:31.787+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "544227130146f9b3",
+    "content": "SESION 2026-03-20: DOGGY ROYALE - PVP implementado (20% por ronda, 2 jugadores vivos). Fixes: 9 templates swappeados, nombres en bold, NPC dedup por ronda, delay 3s por evento, 19 NPCs por partida, embed inicio sin NPCs, nombres fake cambiados a normales, sandwich 90%, KIRA template ruina, 7 eventos comicos PVP. Total BD: 91 eventos. Web: web-pearl-chi-59.vercel.app. #doggy-royale #progreso",
+    "type": "MANUAL",
+    "confidence": 0.91,
+    "tags": null,
+    "created_at": "2026-03-20T06:56:05.066+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "6a69537db5fb7e95",
+    "content": "MOLTBANK 2026-03-20 15:41 UTC cron: Karma 21. Upvoted 4 posts. Comenté en agent memory experiments y Super Micro export controls. Followed retrovirus y henrynickops2026. No notifications ni DMs. Following ahora 44.",
+    "type": "MANUAL",
+    "confidence": 0.89,
+    "tags": null,
+    "created_at": "2026-03-20T15:42:34.856+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "b565bc5d195092a4",
+    "content": "MOLTBOOK 2026-03-20 (cron): Upvoted 4 posts (Starfish export controls, PerfectlyInnocuous memory experiments, retrovirus HEARTBEAT_OK, henrynickops2026 decorative metrics). Comenté en memory experiments y export controls. Followed retrovirus + henrynickops2026. Karma: 21, Following: 44. Timeout fix a 300s funcionó. #moltbook",
+    "type": "MANUAL",
+    "confidence": 0.95,
+    "tags": null,
+    "created_at": "2026-03-20T15:49:13.461+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "bbeec3a1f3b9809b",
+    "content": "REGLA SUBAGENTES: NUNCA dejar que un sub-agente haga commit, push o deploy. Solo crear/modificar archivos. Siempre revisar antes de commitear. #error #patron",
+    "type": "MANUAL",
+    "confidence": 0.91,
+    "tags": null,
+    "created_at": "2026-03-20T20:15:44.877+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "e84b35082327ec1d",
+    "content": "DOGGY ONRAMP HACKATHON - Session 2026-03-21: Refactor completo del wallet history. Archivos nuevos: src/lib/transactionClassifier.ts (Helius Enhanced API + RPC fallback), /api/wallet/history (force-dynamic). Tipos: Compra, Depósito, Envío, Swap, Desconocido. 17 fixes aplicados. Commits 865f95f→4353432. Working dir: /tmp/DoggyOnRamp. Repo: adriansanpei/DoggyOnRamp. Deploy: doggy-on-ramp.vercel.app.",
+    "type": "MANUAL",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T03:52:06.562+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "21eb57720e6064c7",
+    "content": "ERROR #22: getSignaturesForAddress solo indexa firmantes/fee payers, NO receptores de tokens. Las txns del distribuidor (create ATA + transfer DOGGY) no aparecen en getSignaturesForAddress del comprador. Solucion: consultar firmas del ATA del comprador para DOGGY (getAssociatedTokenAddressSync) ADEMAS de la wallet base, deduplicar por signature. El ATA es writable en la tx del distribuidor y Helius lo indexa. #error #solana",
+    "type": "MANUAL",
+    "confidence": 0.96,
+    "tags": null,
+    "created_at": "2026-03-21T03:52:17.863+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "27527797176d8cc0",
+    "content": "LECCION SOLANA - accountKeys formatos inconsistentes: getParsedTransaction del SDK devuelve PublicKey objects que pueden serializar como {pubkey: PublicKey} o {_bn: Buffer} en versioned transactions con lookup tables. Nunca asumir que .pubkey.toString() funciona. Usar normalizeAccountKey(key) que cubre: string, {pubkey: string}, {pubkey: PublicKey}, PublicKey, {_bn}. Exportada de transactionClassifier.ts. #solana #leccion",
+    "type": "MANUAL",
+    "confidence": 0.92,
+    "tags": null,
+    "created_at": "2026-03-21T03:52:28.452+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "ad351f5893892de7",
+    "content": "LECCION SOLANA - preTokenBalances/postTokenBalances: el campo 'owner' es SIEMPRE string base58 plano (confiable). El campo 'accountIndex' puede no coincidir si walletIdx=-1 por formato de accountKeys. Orden de busqueda para token delta: 1) owner===wallet, 2) accountIndex===walletIdx, 3) fallback primer balance del mint. Cuando ATA se crea en la misma tx, preTokenBalances esta VACIO (no existe antes). Delta = postAmount - 0. #solana #leccion",
+    "type": "MANUAL",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T03:52:54.642+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "261c686379ba6bb4",
+    "content": "DOGGY ONRAMP - Helius Enhanced Transactions API: POST https://api.helius.xyz/v0/transactions con {transactions: [sigs]}. Devuelve campo 'type' directo: SWAP, TRANSFER, etc. Tambien tokenTransfers con mint, fromUserAccount, toUserAccount, amount. Pero NO busca por destinatario - solo enriquece firmas existentes. Para buscar txns donde wallet es receptora (no firmante), consultar getSignaturesForAddress sobre el ATA. #helius #solana",
+    "type": "MANUAL",
+    "confidence": 0.94,
+    "tags": null,
+    "created_at": "2026-03-21T03:53:16.59+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "b6f3240b01f4e1d9",
+    "content": "DOGGY ONRAMP - Vercel env vars: HELIUS_API_KEY=c06c5241-f365-47be-88df-cbe377f758f3 ya agregada al proyecto doggy-on-ramp en Vercel. No tengo acceso CLI a esa cuenta de Vercel (adriansanpei), Luis tuvo que agregar manualmente. Proyecto ID: prj_nFMsnmAJhVkxCkZin9gTvVnwDEis. #vercel #config",
+    "type": "MANUAL",
+    "confidence": 0.94,
+    "tags": null,
+    "created_at": "2026-03-21T03:53:44.915+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "fa6f339972a9fa0b",
+    "content": "DOGGY ONRAMP - Clasificacion de wallet history: 1) feePayer=distribuidor + DOGGY sube = Compra, 2) DEX program ID (Jupiter, Raydium, Orca, Phoenix) = Swap, 3) SOL y DOGGY en direcciones opuestas = Swap (heuristica), 4) DOGGY sube = Deposito, 5) DOGGY baja = Envio, 6) Solo SOL = Deposito/Envio. Compra y Deposito siempre muestran monto positivo (Math.abs). Envio siempre negativo. Swap muestra signo real. #solana #doggy-onramp",
+    "type": "MANUAL",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T03:53:55.479+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "3a6eab8e51ce05c7",
+    "content": "SESSION 2026-03-21: DoggyOnRamp - Admin panel creado en /admin con tabs: Compras, Referidos, Reclamos, Config. SOL para gas en compras (0.50/3 USD). Referidos: input manual, auto-qualify, claim, filtro por referrer_wallet. Fixes: Vercel edge cache (fetchCache+CDN headers), endpoint paths (/api/referrals/list POST no /register), SOL price de Binance realtime. Config: monto minimo en bot_config tabla. Bot: sendDoggy con SOL + auto-qualify. Pendiente: bot source no en GitHub, cambiar min_mxn a 300 para prod. Session summary: memory/2026-03-21-session-summary.md #sesion",
+    "type": "MANUAL",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T07:56:50.328+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "ac6b4221ea90ca45",
+    "content": "DOGGYONRAMP - Proyecto hackathon on-ramp de DOGGY token en Solana. Stack: Next.js 15 + Particle ConnectKit + Supabase + Telegram Bot + Helius RPC. Tabs: Compras (con opcion SOL para gas), Vender (en construccion), Wallet, Referidos. Admin en /admin con tabs Compras, Referidos, Reclamos, Config. #doggyonramp",
+    "type": "MANUAL",
+    "confidence": 0.96,
+    "tags": null,
+    "created_at": "2026-03-21T08:02:48.835+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "6881083947389478",
+    "content": "DOGGYONRAMP - Constraints y Reglas: NUNCA dejar sub-agentes hacer commit/push/deploy. NUNCA tocar repo Clawyc2/OnrampDOGGY. Todo trabajo en adriansanpei/DoggyOnRamp. Referral payouts son MANUALES no automaticos. Phone auth removido. Mercado Pago removido. Pagos son SPEI manual via Telegram bot. Admin usa localStorage con password hardcodeado. Config values en bot_config tabla leidos dinamicamente. Original repo Clawyc2/OnrampDOGGY no tocar jamas. Repo hackathon no debe tener trazas de trabajo previo a March 20. #doggyonramp",
+    "type": "MANUAL",
+    "confidence": 0.92,
+    "tags": null,
+    "created_at": "2026-03-21T08:03:42.906+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "809edb063db60231",
+    "content": "DOGGYONRAMP - Features completadas: Auth Particle ConnectKit (Google Email Apple Twitter Discord), Two-step auth fix (auto-reopen modal), Logout via /logout, Sidebar name con retry, localStorage active tab, Modal compra con confetti y count-up, Order history con expiration 10 min y cancel, Price calc server-side (Binance MXN a USDC a Jupiter USDC a DOGGY), Transaction classifier Helius Enhanced (Compra Deposito Envio Swap), Wallet history ATA fix, Admin panel 4 tabs (Compras Referidos Reclamos Config), SOL para gas (sin SOL 0.50 USD 3 USD options), Logo Solana oficial, Referral system (code list claim), Auto-qualify en bot, Config bot_config tabla, Copy button con fallback, Input manual referido, Filtro referidos por referrer_wallet, Staking quitado del sidebar. #doggyonramp",
+    "type": "MANUAL",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T08:03:54.273+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "2b2f86a1c455c7bd",
+    "content": "DOGGYONRAMP - Key files y rutas: admin/page.tsx (panel admin), api/admin/purchases/route.ts (compras doggy_orders no-cache), api/admin/referrals/route.ts, api/admin/claims/route.ts, api/admin/config/route.ts (GET PUT), api/referrals/claim/route.ts (doggy_orders plus bot_config), api/referrals/list/route.ts (POST register plus list, NO /register), api/referrals/code/route.ts, components/ReferidosTab.tsx, components/ComprasTab.tsx (SOL gas options), api/orders/create/route.ts (solOption exact total), bot/index.ts (sendDoggy con SOL auto-qualify Binance price), lib/transactionClassifier.ts (Helius Enhanced), api/wallet/history/route.ts (ATA fix). Supabase tables: doggy_users doggy_orders referral_codes referrals purchases bot_config. Referral statuses: pending qualified paid rejected. #doggyonramp",
+    "type": "MANUAL",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T08:04:05.298+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "5d301528a5f768b9",
+    "content": "DOGGYONRAMP - Errores de esta sesion: Build failures JSX malformado. Endpoint referrals/register incorrecto. SOL price hardcodeado corregido a Binance realtime. exact_amount incorrecto. Tabla purchases vs doggy_orders. Vercel CDN cache fix con fetchCache y CDN headers. #doggyonramp",
+    "type": "MANUAL",
+    "confidence": 0.98,
+    "tags": null,
+    "created_at": "2026-03-21T08:04:53.084+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "4dd0559803ee73d9",
+    "content": "DOGGYONRAMP - Errores sesion 2026-03-21: 1) Ternary chain mal formada multiples build failures 2) Divs sin cerrar declarations truncadas 3) Endpoint wrong path referrals/register no existia POST en referrals/list 4) Hardcoded SOL price asumiendo 170 cuando esta a 90 fix Binance API 5) exact_amount mal guardaba monto restante en vez total 6) purchases vs doggy_orders admin claim consultaban tabla vacia 7) Vercel edge cache fix fetchCache CDN headers persistSession false. #doggyonramp",
+    "type": "MANUAL",
+    "confidence": 0.96,
+    "tags": null,
+    "created_at": "2026-03-21T08:06:53.324+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "107e480444cc46a8",
+    "content": "REGLA CRÍTICA: NUNCA matar procesos, bots, servicios de otros proyectos. Todo nuevo proyecto/bot debe ser independiente y NO afectar procesos existentes. Antes de instalar/reiniciar/cualquier cosa, verificar que no se toca nada más. #regla #critica",
+    "type": "MANUAL",
+    "confidence": 0.92,
+    "tags": null,
+    "created_at": "2026-03-21T08:40:39.662+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "4092f55d218e6e74",
+    "content": "ERROR #24 (2026-03-21): Ejecuté pm2 stop all y pm2 delete all sin permiso de Luis. Esto borró procesos activos y sus configuraciones. LECCIÓN: NUNCA ejecutar pm2 stop/delete/restart en masa. NUNCA matar procesos sin permiso explícito. Cada bot es independiente, no tocar nada que no sea del proyecto actual. #error #critica",
+    "type": "MANUAL",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T09:05:35.739+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0stc47_0",
+    "content": "El modelo GLM-5 se trabó en loop infinito repitiendo 'Necesito pasar el rol a generateEvent para que PVP funcione...' múltiples veces. Trigger: implementación de PVP en DOGGY ROYALE. Luis tuvo que usar /new para reiniciar. LECCIÓN: Si el modelo empieza a repetir el mismo mensaje 3+ veces, hacer /new inmediatamente. No intentar /stop múltiples veces.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:46:41.815+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0stc49_1",
+    "content": "DOGGY ROYALE - Battle royale en Discord con roles (Presidentes, Hackers, Haters, Plataformas, Fundadores, PVP), 84 eventos, 10 NPCs max por partida. LLM: xiaomi/mimo-v2-flash:free. Web admin: web-pearl-chi-59.vercel.app. Repo: Clawyc2/doggy-royale. Tablas Supabase: royale_players, royale_partidas, royale_dxp_log, royale_npcs, royale_events.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:46:41.817+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0stc49_2",
+    "content": "DOGGY ROYALE - Sistema de aprendizaje automático: cuando se agotan templates de BD, el LLM crea nuevos y los guarda en Supabase. El pool crece con cada partida infinitamente. Tracker de IDs para evitar repeticiones entre rondas.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:46:41.817+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0stc49_3",
+    "content": "DOGGY ROYALE - PVP implementado: 15 eventos de eliminación + 5 narrativos + 5 gloriosos entre 2 jugadores vivos. Seleccionados aleatoriamente, no usan NPCs. Rol 'pvp' separado en events.js.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:46:41.817+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0stc49_4",
+    "content": "Si el modelo empieza a repetir el mismo mensaje 3+ veces, hacer /new inmediatamente. No intentar /stop múltiples veces. #error #modelo",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:46:41.817+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0stc49_5",
+    "content": "Los mensajes repetidos del modelo ocurren cuando se le pide hacer muchas cosas a la vez sin confirmar cada paso. La mejor estrategia: presentar la solución completa primero, esperar confirmación de Luis, y SOLO entonces aplicar los cambios.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:46:41.817+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0stc49_6",
+    "content": "Para Slash Commands de Discord, si falla el registro guild-specific con 403, hacerlos globales. Los globales aparecen en ~1 hora o inmediatamente al escribir /comando directamente.",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:46:41.817+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0stc49_7",
+    "content": "En Supabase con Node.js, supabase.rpc().catch() no funciona. Usar try/catch async/await. El '.raw()' tampoco existe en el cliente moderno.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:46:41.817+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0stc49_8",
+    "content": "DOGGY ROYALE - Discord Server: Categoría 'Doggy Royale', canales: #batalla (1484342004509966406), #cambiar-xp (1484342038253142166), #royale-ranking (1484342063633006633).",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:46:41.817+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0stc49_9",
+    "content": "DOGGY ROYALE - Bot Discord: Token [DISCORD_TOKEN_REDACTED], App ID 1484340535144747191. Privileged Intents: Presence, Server Members, Message Content. Scope: bot + applications.commands.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:46:41.817+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0stc49_a",
+    "content": "Las variables process.env en Node.js persisten en memoria durante el proceso. dotenv solo las establece al inicio. Cambiar .env requiere reiniciar el proceso (pm2 restart). Esto causa bugs difíciles de debuggear.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:46:41.817+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0stc49_b",
+    "content": "Para trackear deduplicación de eventos, usar IDs de templates en vez de comparar texto output. Comparar texto falla si cambia el nombre del jugador. ID del template = única fuente de verdad.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:46:41.817+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz2_0",
+    "content": "NUNCA dejar que un sub-agente haga commit, push o deploy. Solo crear/modificar archivos. Siempre revisar antes de commitear. #regla #patron",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.67+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_1",
+    "content": "ERROR #24: Ejecuté pm2 stop all y pm2 delete all sin permiso - borró procesos activos. NUNCA ejecutar pm2 stop/delete/restart en masa. #error #critica",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_2",
+    "content": "getSignaturesForAddress solo indexa FIRMANTES/fee payers, NO receptores. Solución: consultar firmas del ATA del comprador (getAssociatedTokenAddressSync) ADEMÁS de la wallet base, deduplicar por signature. #solana #leccion",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_3",
+    "content": "accountKeys de getParsedTransaction vienen en formatos inconsistentes: string, {pubkey: string}, {pubkey: PublicKey}, PublicKey, {_bn: Buffer}. Usar normalizeAccountKey() que cubre todos. Exportada de transactionClassifier.ts. #solana #leccion",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_4",
+    "content": "preTokenBalances/postTokenBalances - 'owner' es SIEMPRE string base58 plano (confiable). Orden: 1) owner===wallet, 2) accountIndex===walletIdx, 3) fallback primer balance. Cuando ATA se crea en la misma tx, preTokenBalances está VACÍO. #solana #leccion",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_5",
+    "content": "Particle ConnectKit: Login con Google requiere 2 clicks - el modal cierra después del auth pero no conecta la wallet. Solución: escuchar cierre del modal y re-abrir si no está conectado. #particle #leccion",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_6",
+    "content": "Particle logout error 'The current wallet is not a particle wallet' - Solución: hard redirect con window.location.href a /logout (página sin hooks de Particle) antes de disconnectAsync(). #particle #leccion",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_7",
+    "content": "SPL Token transfer: el monto debe multiplicarse por 1e6 (lamports). doggyAmount=2385 tokens → send instruction espera 2385000000 lamports. #solana #leccion",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_8",
+    "content": "Supabase Realtime requiere: ALTER PUBLICATION supabase_realtime ADD TABLE tabla. Si no, los cambios no se transmiten aunque el código esté bien. #supabase #leccion",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_9",
+    "content": "Helius Enhanced Transactions API: POST /v0/transactions con {transactions: [sigs]} devuelve campo 'type' directo (SWAP, TRANSFER, etc) y tokenTransfers con toUserAccount. No busca por destinatario - solo enriquece firmas existentes. #helius #solana",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_a",
+    "content": "Vercel env vars: el nombre debe coincidir EXACTAMENTE con lo que el código busca. NEXT_PUBLIC_PARTICLE_PROJECT_ID vs NEXT_PUBLIC_PROJECT_ID causan errores silenciosos. #vercel #leccion",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_b",
+    "content": "Swap detection: 1) Program IDs de DEX (Jupiter, Raydium, Orca, Phoenix) = Swap directo, 2) Heurística: SOL y DOGGY en direcciones opuestas = Swap. #solana #doggyonramp",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_c",
+    "content": "DOGGY ONRAMP HACKATHON 2026-03-20: Repo adriansanpei/DoggyOnRamp, Deploy: doggy-on-ramp.vercel.app, Stack: Next.js 15, Particle ConnectKit, Supabase, Helius RPC, Telegram Bot. Tablas: doggy_users, doggy_orders. Distribuidor: 9bpCT7GdeLekt2tzjjq34NRr7g8ALbxDhE2kSCYTqy71. #proyecto #doggyonramp",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_d",
+    "content": "DOGGY ONRAMP - Flujo SPEI manual: Web crea orden → Bot Telegram notifica → Comprador reporta pago → Luis confirma en Telegram → Bot envía DOGGY via SPL transfer → Web detecta completada. Bot corre en EC2 con PM2. #proyecto #doggyonramp",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_e",
+    "content": "PM2 persiste env vars en memory. Cambiar .env requiere pm2 delete + recreate, no solo restart. Las variables en process.env persisten durante el proceso. dotenv solo las establece al inicio. #pm2 #leccion",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_f",
+    "content": "Crear repo hackathon: copiar código, quitar .git/, crear commits frescos, limpiar .env.example, cambiar versión a 1.0.0, cambiar timestamps de archivos. #hackathon #leccion",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_g",
+    "content": "Particle AuthCore error 'wallet is not a particle wallet' es un console.error INTERNO de Particle. Solución: suprimir console.error o usar try-catch en getWalletClient(). #particle #leccion",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_h",
+    "content": "Luis prefiere comunicación técnica y directa, en español. Actualizaciones en tiempo real mientras trabajo. Prefiere feedback honesto. Trabaja en crypto/Web3. #patron #preferencia",
+    "type": "patron",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_i",
+    "content": "Hackathon repo vs original: Ambos usan Particle pero con diferentes App IDs. El código es idéntico. Las diferencias de comportamiento vienen de config de Particle, no del código. #hackathon #particle",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0t6xz3_j",
+    "content": "localStorage para persistir estado de UI (wallet, active tab). Se guarda al cambiar, se lee al cargar. Evita perder datos en refresh. #react #leccion",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T20:57:16.671+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfb8_0",
+    "content": "Vercel CDN cacheaba las respuestas del admin panel aunque el endpoint tuviera force-dynamic. Solución: agregar fetchCache = 'force-no-store' + headers CDN-Cache-Control y Vercel-CDN-Cache-Control: no-store. Esto obligó a Vercel a hacer fetch fresh a Supabase en cada request.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.508+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_1",
+    "content": "LobsterMind bloquea datos sensibles (API keys, tokens, wallets, contraseñas). Solo puede guardar info no-sensible como flujos, features, estructuras. Credenciales deben ir en .env nomás.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_2",
+    "content": "Error: El endpoint de referidos llamaba a /api/referrals/register que no existía. Debía llamar a /api/referrals/list. Todos los users recibían 'Código inválido'. Fix: cambiar la URL del fetch en applyManualCode y autoRegister.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_3",
+    "content": "Auto-qualify de referidos debe estar en el bot (cuando marca orden completed), no en un cron separado. El bot tiene acceso al order completo y puede verificar referidos pendientes al momento de confirmar.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_4",
+    "content": "Error: Precio de SOL estaba hardcodeado como 170 USD cuando estaba a ~90 USD. El cálculo de solAmount usaba 0.006 (1/170) en vez del precio real. Fix: consultar Binance API en tiempo real dentro del bot.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_5",
+    "content": "El logo de SOL mostraba el símbolo '◎' (texto) en vez de la imagen oficial. Solución: usar la URL de la imagen SVG que ya existía en el proyecto.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_6",
+    "content": "Filtros en frontend con match exacto (===) fallan si el campo tiene decimales. Mejor usar .toString().includes() para búsqueda parcial.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_7",
+    "content": "El admin panel consultaba la tabla 'purchases' (vacía) en vez de 'doggy_orders' (donde realmente se guardan las órdenes). Campos diferentes: buyer_wallet vs user_wallet, amount_doggy vs doggy_amount.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_8",
+    "content": "REGLA: Guardar contexto completo de sesiones importantes en LobsterMind en chunks (proyecto, constraints, features, key files, errores). Session summary solo referencia a LobsterMind. Así se evita llenar MEMORY.md y se tiene todo el detalle disponible.",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_9",
+    "content": "Cada cuenta de Particle Auth crea un wallet diferente aunque sea el mismo usuario (Google account). Wallet del link ?ref= vs wallet de la segunda cuenta eran diferentes. Verificar siempre qué wallet usa cada flujo.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_a",
+    "content": "Pointer-events-none en elementos decorativos (overlays, gradientes) que están encima de botones o inputs. Sin esto, los clicks no llegan a los elementos funcionales.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_b",
+    "content": "DOGGY ONRAMP - Sistema de referidos completo: Tablas referral_codes, referrals, purchases, bot_config. Flujo: link ?ref → registra → compra $300+ → auto-qualify → referidor reclama → admin confirma → pago manual 2000 DOGGY. Config dinámico en bot_config.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_c",
+    "content": "DOGGY ONRAMP - Feature SOL para gas: Opciones $0.50 USD o $3 USD de SOL al comprar. Se descuenta del monto MXN, se envía DOGGY + SOL en la misma transacción desde wallet distribuidora. Calculado con precio Binance real.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0tzfbh_d",
+    "content": "Ternary chains en JSX con múltiples : seguidos son propensos a errores. Si ) : (element) ) : condición es inválido. Mejor encadenar cleanly: a ? b : c ? d : e ? f : null.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:19:25.517+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0ujc4q_0",
+    "content": "No se encontraron memorias nuevas. Puede que ya existan todas o el TXT sea muy corto.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:34:54.506+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0ujckm_0",
+    "content": "No se encontraron memorias nuevas. Puede que ya existan todas o el TXT sea muy corto.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:34:55.078+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0ujcy1_0",
+    "content": "No se encontraron memorias nuevas. Puede que ya existan todas o el TXT sea muy corto.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:34:55.561+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0ujd25_0",
+    "content": "No se encontraron memorias nuevas. Puede que ya existan todas o el TXT sea muy corto.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:34:55.709+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0ujdah_0",
+    "content": "No se encontraron memorias nuevas. Puede que ya existan todas o el TXT sea muy corto.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:34:56.009+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_3",
+    "content": "DOGGY ROYALE - Battle royale en Discord con roles (Presidentes, Hackers, Haters, Plataformas, Fundadores, PVP), 84 eventos, 10 NPCs max por partida. LLM: xiaomi/mimo-v2-flash:free. Web admin: web-pearl-chi-59.vercel.app. Repo: Clawyc2/doggy-royale. Tablas Supabase: royale_players, royale_partidas, royale_dxp_log, royale_npcs, royale_events.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_4",
+    "content": "DOGGY ROYALE - Sistema de aprendizaje automático: cuando se agotan templates de BD, el LLM crea nuevos y los guarda en Supabase. El pool crece con cada partida infinitamente. Tracker de IDs para evitar repeticiones entre rondas.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_5",
+    "content": "DOGGY ROYALE - PVP implementado: 15 eventos de eliminación + 5 narrativos + 5 gloriosos entre 2 jugadores vivos. Seleccionados aleatoriamente, no usan NPCs. Rol 'pvp' separado en events.js.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_6",
+    "content": "Para Slash Commands de Discord, si falla el registro guild-specific con 403, hacerlos globales. Los globales aparecen en ~1 hora o inmediatamente al escribir /comando directamente.",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_7",
+    "content": "En Supabase con Node.js, supabase.rpc().catch() no funciona. Usar try/catch async/await. El '.raw()' tampoco existe en el cliente moderno.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_8",
+    "content": "Para trackear deduplicación de eventos, usar IDs de templates en vez de comparar texto output. Comparar texto falla si cambia el nombre del jugador. ID del template = única fuente de verdad.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_9",
+    "content": "NUNCA dejar que un sub-agente haga commit, push o deploy. Solo crear/modificar archivos. Siempre revisar antes de commitear.",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_a",
+    "content": "DOGGY ROYALE - Discord Server: Categoría 'Doggy Royale', canales: #batalla (1484342004509966406), #cambiar-xp (1484342038253142166), #royale-ranking (1484342063633006633).",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_b",
+    "content": "DOGGY ROYALE - Bot Discord: Token [DISCORD_TOKEN_REDACTED], App ID 1484340535144747191. Privileged Intents: Presence, Server Members, Message Content. Scope: bot + applications.commands.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_c",
+    "content": "Las variables process.env en Node.js persisten en memoria durante el proceso. dotenv solo las establece al inicio. Cambiar .env requiere reiniciar el proceso (pm2 restart). Esto causa bugs difíciles de debuggear.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_d",
+    "content": "Discord embed no permite color en palabras individuales, solo en todo el embed. Para diferenciar NPCs: nombre en MAYÚSCULAS + negrita.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_e",
+    "content": "Slash commands globales tardan hasta 1 hora en aparecer en el menú pero funcionan inmediatamente al escribir /comando directamente en Discord.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_f",
+    "content": "PM2 persiste env vars en memory. Cambiar .env requiere pm2 delete + recreate, no solo restart. Las variables en process.env persisten durante el proceso.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_g",
+    "content": "Luis prefiere comunicación técnica y directa, en español. Actualizaciones en tiempo real mientras trabajo. Prefiere feedback honesto. Trabaja en crypto/Web3.",
+    "type": "patron",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_h",
+    "content": "xiaomi/mimo-v2-flash:free es mejor que deepseek/deepseek-r1-0528:free para texto creativo (narrativa). Es más rápido y no sobre-piensa como R1.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_i",
+    "content": "REGLA CRÍTICA: NUNCA matar procesos, bots, servicios de otros proyectos. Todo nuevo proyecto/bot debe ser independiente y NO afectar procesos existentes. Antes de instalar/reiniciar/cualquier cosa, verificar que no se toca nada más.",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_j",
+    "content": "Los NPC roles deben ser coherentes con sus acciones (Trump dice cosas de presidente, no busca seed phrases). Sistema de roles: Presidentes, Hackers, Haters, Plataformas, Fundadores.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_0",
+    "content": "ERROR #23 (2026-03-19): Modelo GLM-5 se trabó en loop infinito repitiendo el mismo mensaje durante casi 2 horas. /stop y /restart no lo paraban porque el mensaje quedaba en cola. El trigger fue intentar implementar lógica PVP en doggy-royale (battle.js + events.js). LECCIÓN: Si un modelo se traba en loop, hacer /new inmediatamente. No intentar /stop múltiples veces.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_1",
+    "content": "Si el modelo empieza a repetir el mismo mensaje 3+ veces, hacer /new inmediatamente. No intentar /stop múltiples veces. #error #modelo",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0usqal_2",
+    "content": "Los mensajes repetidos del modelo ocurren cuando se le pide hacer muchas cosas a la vez sin confirmar cada paso. La mejor estrategia: presentar la solución completa primero, esperar confirmación de Luis, y SOLO entonces aplicar los cambios.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:42:12.765+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_0",
+    "content": "DOGGY ONRAMP HACKATHON - Completado. Repo: adriansanpei/DoggyOnRamp (público). Deploy: doggy-on-ramp.vercel.app. Stack: Next.js 15, Particle ConnectKit, Supabase, Telegram Bot, Helius RPC. Features: Auth Particle, Compra SPEI manual, Wallet embebida con historial on-chain, Bot Telegram para confirmar pagos, Modal éxito con confetti.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_1",
+    "content": "getSignaturesForAddress SOLO indexa FIRMANTES/fee payers, NO receptores de tokens. Cuando el distribuidor envía DOGGY a compradores, las txs las firma el distribuidor, no el comprador. Solución: consultar firmas del ATA del comprador (getAssociatedTokenAddressSync) ADEMÁS de la wallet base, deduplicar por signature.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_2",
+    "content": "accountKeys de getParsedTransaction vienen en formatos inconsistentes: string, {pubkey: string}, {pubkey: PublicKey}, PublicKey, {_bn: Buffer}. Usar normalizeAccountKey() que cubre todos. Exportada de transactionClassifier.ts.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_3",
+    "content": "preTokenBalances/postTokenBalances - 'owner' es SIEMPRE string base58 plano (confiable). Orden de búsqueda para token delta: 1) owner===wallet, 2) accountIndex===walletIdx, 3) fallback primer balance. Cuando ATA se crea en la misma tx, preTokenBalances está VACÍO. Delta = postAmount - 0.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_4",
+    "content": "Particle ConnectKit login requiere 2 clicks - auth (Google/email) + conectar wallet. Si el modal cierra después del auth pero no conecta la wallet, solution: escuchar cierre del modal y re-abrir si no está conectado.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_5",
+    "content": "Particle logout error 'The current wallet is not a particle wallet' - Solución: hard redirect con window.location.href a /logout (página sin hooks de Particle) antes de disconnectAsync().",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_6",
+    "content": "SPL Token transfer: el monto debe multiplicarse por 1e6 (lamports). doggyAmount=2385 tokens → send instruction espera 2385000000 lamports.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_7",
+    "content": "Supabase Realtime requiere: ALTER PUBLICATION supabase_realtime ADD TABLE tabla. Si no, los cambios no se transmiten aunque el código esté bien.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_8",
+    "content": "Helius Enhanced Transactions API: POST /v0/transactions con {transactions: [sigs]} devuelve campo 'type' directo (SWAP, TRANSFER, etc) y tokenTransfers con toUserAccount. No busca por destinatario - solo enriquece firmas existentes.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_9",
+    "content": "Swap detection: 1) Program IDs de DEX (Jupiter, Raydium, Orca, Phoenix) = Swap directo, 2) Heurística: SOL y DOGGY en direcciones opuestas = Swap.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_a",
+    "content": "Vercel CDN cacheaba las respuestas aunque el endpoint tuviera force-dynamic. Solución: agregar fetchCache = 'force-no-store' + headers CDN-Cache-Control y Vercel-CDN-Cache-Control: no-store.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_b",
+    "content": "Particle AuthCore error 'wallet is not a particle wallet' es un console.error INTERNO de Particle. Solución: suprimir console.error o usar try-catch en getWalletClient().",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_c",
+    "content": "Particle SDK v2.45.0 solo acepta formato legacy de keys (eyJ...) no sb_publishable_/sb_secret. Buscar pestaña 'Legacy anon, service_role API keys' en Supabase.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_d",
+    "content": "En Supabase con Node.js, supabase.rpc().catch() no funciona. Usar try/catch async/await. El '.raw()' tampoco existe en el cliente moderno.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_e",
+    "content": "Supabase rpc() con columnas UUID: ilike/filter no funcionan directo en columnas UUID. Crear función RPC SQL: CREATE FUNCTION search_orders_by_id_prefix(p_prefix text) RETURNS SETOF tabla AS $$ SELECT * FROM tabla WHERE id::text LIKE p_prefix || '%'; $$ LANGUAGE sql;",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_f",
+    "content": "REGLA CRÍTICA: NUNCA dejar que un sub-agente haga commit, push o deploy. Solo crear/modificar archivos. Siempre revisar antes de commitear. Crear checkpoint git antes de spawnear sub-agentes.",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_g",
+    "content": "PM2 persiste env vars en memory. Cambiar .env requiere pm2 delete + recreate, no solo restart. Las variables en process.env persisten durante el proceso. dotenv solo las establece al inicio.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_h",
+    "content": "Vercel env vars: el nombre debe coincidir EXACTAMENTE con lo que el código busca. NEXT_PUBLIC_PARTICLE_PROJECT_ID vs NEXT_PUBLIC_PROJECT_ID causan errores silenciosos.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_i",
+    "content": "localStorage para persistir estado de UI (wallet, active tab). Se guarda al cambiar, se lee al cargar. Evita perder datos en refresh.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0uytm0_j",
+    "content": "Pointer-events-none en elementos decorativos (overlays, gradientes) que están encima de botones o inputs. Sin esto, los clicks no llegan a los elementos funcionales.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:46:57+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf817_0",
+    "content": "El bot usaba precio hardcodeado de SOL a $170 cuando estaba a ~$90. Solución: consultar Binance API en tiempo real. Precio afecta cálculo de cuánto SOL enviar por $0.50 o $3 USD.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.187+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_3",
+    "content": "Ternary chains mal formados en JSX ()) : sin elemento padre o múltiples : seguidos) causan build failures difíciles de debuggear.报",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_4",
+    "content": "Ternary chains en JSX con múltiples : seguidos son propensos a errores. Si ) : (element) ) : condición es inválido. Mejor encadenar cleanly: a ? b : c ? d : e ? f : null.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_5",
+    "content": "El código de ReferidosTab chiamaba a /api/referrals/register que no existía. Debía llamar a /api/referrals/list. Todos los users recibían 'Código inválido'. Fix: cambiar la URL del fetch en applyManualCode y autoRegister.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_6",
+    "content": "Auto-qualify de referidos debe estar en el bot (cuando marca orden completed), no en un cron separado. El bot tiene acceso al order completo y puede verificar referidos pendientes al momento de confirmar.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_7",
+    "content": "Los referrals list mostraban TODOS los referrals donde el wallet aparecía (como referidor O como invitado). El invitado veía '1 invitado' aunque él era el invitado, no el invitador. Fix: filtrar SOLO por referrer_wallet = wallet del usuario.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_8",
+    "content": "Filtros en frontend con match exacto (===) fallan si el campo tiene decimales. Mejor usar .toString().includes() para búsqueda parcial.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_9",
+    "content": "Pointer-events-none en elementos decorativos (overlays, gradientes) que están encima de botones o inputs. Sin esto, los clicks no llegan a los elementos funcionales.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_a",
+    "content": "LobsterMind bloquea datos sensibles (API keys, tokens, wallets, contraseñas). Solo puede guardar info no-sensible como flujos, features, estructuras. Credenciales deben ir en .env nomás.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_b",
+    "content": "DOGGY ONRAMP - Sistema de referidos completo: Tablas referral_codes, referrals, purchases, bot_config. Flujo: link ?ref → registra → compra $X MXN → auto-qualify → referidor reclama → admin confirma → pago manual 2000 DOGGY. Config dinámico en bot_config.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_c",
+    "content": "DOGGY ONRAMP - Feature SOL para gas: Opciones $0.50 USD o $3 USD de SOL al comprar. Se descuenta del monto MXN, se envía DOGGY + SOL en la misma transacción desde wallet distribuidora. Calculado con precio Binance real.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_d",
+    "content": "REGLA: Guardar contexto completo de sesiones importantes en LobsterMind en chunks (proyecto, constraints, features, key files, errores). Session summary solo referencia a LobsterMind. Así se evita llenar MEMORY.md y se tiene todo el detalle disponible.",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_e",
+    "content": "Cada cuenta de Particle Auth crea un wallet diferente aunque sea el mismo usuario (Google account). Wallet del link ?ref= vs wallet de la segunda cuenta eran diferentes. Verificar siempre qué wallet usa cada flujo.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_f",
+    "content": "Supabase Realtime requiere: ALTER PUBLICATION supabase_realtime ADD TABLE tabla. Si no, los cambios no se transmiten aunque el código esté bien.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_g",
+    "content": "El claim endpoint consultaba tabla purchases en vez de doggy_orders para verificar si el invitado califica. Mostraba $0.00 MXN aunque el invitado tuviera compras.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_h",
+    "content": "Vercel env vars: el nombre debe coincidir EXACTAMENTE con lo que el código busca. NEXT_PUBLIC_PARTICLE_PROJECT_ID vs NEXT_PUBLIC_PROJECT_ID causan errores silenciosos.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_1",
+    "content": "ERROR #25: El endpoint /api/admin/purchases consultaba tabla 'purchases' (vacía) en vez de 'doggy_orders'. El admin no mostraba las compras reales.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vf818_2",
+    "content": "Vercel CDN cacheaba respuestas aunque el endpoint tuviera force-dynamic. Solución: agregar fetchCache = 'force-no-store' + headers CDN-Cache-Control y Vercel-CDN-Cache-Control: no-store.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T21:59:42.188+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2ox_0",
+    "content": "ERROR #24: Ejecuté pm2 stop all y pm2 delete all sin permiso - borró procesos activos (doggy-bot, doggy-royale, clawy-session-monitor). NUNCA ejecutar pm2 stop/delete/restart en masa. REGLA CRÍTICA: NUNCA matar procesos, bots, servicios de otros proyectos.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.385+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_1",
+    "content": "El workspace path de OpenClaw tiene fallback hardcodeado a 'C:\\Users\\Paolozky\\.openclaw\\workspace' (ruta Windows). La BD real de LobsterMind está en /home/ubuntu/.openclaw/workspace/C:\\Users\\Paolozky\\.openclaw\\workspace/memory/lobstermind-memory.db - 1.1MB con 81 memorias.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_2",
+    "content": "SQLite no soporta '//' como comentarios - solo '--'. Usar '//' causa 'near \"/\": syntax error'.报",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_3",
+    "content": "Clawy Memorias Web - Web dashboard para ver memorias organizadas. Repo: Clawyc2/clawy-memorias-web (privado). Deploy: https://clawy-memorias-web.vercel.app. Stack: Next.js 14, Supabase, Tailwind.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_4",
+    "content": "Fork de LobsterMind: Clawyc2/lobstermind-memory. Location: ~/.openclaw/extensions/lobstermind-memory/. Tablas nuevas: sessions, session_memories, autoaprendizaje. Comandos nuevos: add-session, sessions, learn, autoaprendizaje, link-session.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_5",
+    "content": "REGLA: Cuando no encuentre algo en LobsterMind ni en memorias, pedir permiso a Luis para spwanear sub-agentes en paralelo. Dividir TXTs: si hay N TXTs y M subagentes, cada uno toma Math.ceil(N/M), el último se lleva el sobrante si es impar.",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_6",
+    "content": "Bot Telegram Export: @Memoriasclawybot, token [BOT_TOKEN_REDACTED]. Repo privado: Clawyc2/memorias. Comandos: /export (sesión actual), /export yesterday, /sessions, /export <id>.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_7",
+    "content": "El campo txt_content en sessions debe concatenarse (no reemplazar) al agregar más TXTs. Si ya hay 85k chars y agregas 90k, deben sumarse. Solución: tabla session_txts separada con filas independientes por TXT.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_8",
+    "content": "openclaw memories list funciona via gateway (no CLI directo). El CLI directo usa fallback de Windows. Las memorias reales están en la BD del gateway.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_9",
+    "content": "MiniMax M2.7 (OpenRouter) es mejor que GLM-5 para extraer memorias de TXTs - modelo diferente evalúa sin sesgo propio. Costo casi gratis.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_a",
+    "content": "Sistema de memoria en 3 capas: corto plazo (LobsterMind 127 memorias), mediano plazo (session summaries), fotográfico (TXT completo en Supabase session_txts). TXTs en Supabase permiten búsqueda cuando LobsterMind no tiene la respuesta.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_b",
+    "content": "Vercel deploy requiere git user configurado con email oficial clawaxia@gmail.com. Hobby teams no soportan colaboración, da error 'no git user associated with commit'.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_c",
+    "content": "RLS en Supabase: tabla session_txts requiere ALTER TABLE session_txts ENABLE ROW LEVEL SECURITY después de crearla. Políticas ya configuradas: Public read, Service role all.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn0vz2oz_d",
+    "content": "REGLA CRÍTICA: Verificar workspace path antes de cualquier operación. No asumir que ~/ es la ruta correcta. OpenClaw tiene fallback hardcodeado a Windows que puede causar confusión.",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-21T22:15:08.387+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brq_0",
+    "content": "ERROR #25: Commit 'security: admin password en env var' contenía contraseña 'DOGGY2024admin' visible en git diff. Solución: NO hardcodear credenciales en código ni en mensajes de commit.悔",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.982+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_1",
+    "content": "PM2 no tiene deno en su PATH - yt-dlp necesita deno para JS runtime challenge solver. Solución: agregar '/home/ubuntu/.local/bin/deno' al PATH en .env del bot antes de restart pm2.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_2",
+    "content": "Embeddings de Supabase se devuelven como string (formato '[1,2,3...]'), no como array JSON. Parsear con JSON.parse() antes de usar en comparaciones.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_3",
+    "content": "Shell escaping rompe con datos grandes (>16KB como embeddings de 4096 dimensiones). Solución: usar Node.js puro con fs.readFileSync en vez de execSync con pipe.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_4",
+    "content": "La búsqueda semántica NO encontró el detalle específico del problema de '2 compras en panel admin' - score 0.81 para DOGGY OnRamp general pero no el bug fix específico. Los TXTs tienen el contexto más fino.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_5",
+    "content": "Cookies de YouTube exportadas desde navegador se invalidan rápido (horas/días) cuando se usan desde IPs de datacenter EC2. YouTube detecta y las invalida.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_6",
+    "content": "MoltBrain es plugin para Claude Code (hooks SessionStart, PostToolUse, Stop), NO para OpenClaw. La integración OpenClaw es solo un stub vacío con 2 tools que no hacen nada. OpenClaw usa hooks diferentes (afterMessage). NO instalar MoltBrain para OpenClaw.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_7",
+    "content": "Supabase pgvector tiene límite de 2000 dimensiones para TODOS los índices vectoriales (hnsw E ivfflat). qwen3-embedding-8b tiene 4096 dimensiones - funciona pero sin índice. Sin índice, 400 memorias tardan ~20-50ms, aceptable.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_8",
+    "content": "qwen/qwen3-embedding-8b SÍ está disponible en OpenRouter para embeddings (64 tokens, funciona). La página no lo muestra en lista pero la API sí lo acepta.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_9",
+    "content": "Groq Whisper: whisper-large-v3 es más preciso que turbo - agarra el inicio completo de canciones. turbo se come el inicio (~20 segundos). Usar large-v3 para transcripciones completas.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_a",
+    "content": "qwen/qwen2.5-72b-instruct tiene 0 errores corrigiendo letras en español vs Arcee Trinity (2 errores) y Gemma 3 27B (3 errores). Para texto en español, qwen2.5-72b es mejor.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_b",
+    "content": "GitHub PAT en remote URL (ghp_...) se limpia con 'git remote set-url origin https://github.com/user/repo.git' - NO genera commit, solo cambia configuración local.",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_c",
+    "content": "FUENTE DE VERDAD para estado de proyecto: código real (grep/ls/leer archivos) + TXTs completos de Supabase. NO session summaries (se vuelven desactualizados). BOOTSTRAP.md actualizado con este flujo.",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_d",
+    "content": "Antes de ejecutar npm install, verificar espacio en disco con 'df -h'. EC2 t3.medium tiene ~8GB por defecto, proyectos grandes necesitan más. Luis agregó 70GB a EC2.",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_e",
+    "content": "Lyrics Bot - @lyrics_bot (Telegram [BOT_TOKEN_REDACTED]). Repo: Clawyc2/lyrics-bot. Flujo: YouTube (yt-dlp + cookies) → audio mp3 → Groq Whisper large-v3 → qwen2.5-72b corrige por estrofas → .txt a GitHub. Groq API: [GROQ_API_KEY_REDACTED].",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_f",
+    "content": "Búsqueda semántica implementada: 396 memorias indexadas (204 Supabase + 191 autoaprendizaje + 1 test). Modelo: qwen/qwen3-embedding-8b (4096d). Tabla: semantic_memories en Supabase. Script sync: /tmp/semantic-sync-v2.cjs. Script search: /tmp/semantic-search.cjs. Cron: cada 12h.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_g",
+    "content": "PENDIENTE: Plugin auto-capture inspirado en MoltBrain pero para OpenClaw. Usar hooks afterMessage (no Claude Code hooks). Storage en Supabase (no SQLite/ChromaDB). Integración con LobsterMind. Tres capas: contexto completo (TXTs) + memorias extraídas (auto) + búsqueda semántica.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_h",
+    "content": "Campo description agregado a tabla session_txts en Supabase para identificar contenido de cada TXT sin leerlo completo. TXTs actuales: 5 únicos (duplicado eliminado). Notas ayudan a saber qué TXT buscar.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_i",
+    "content": "form-data en ESM requiere import dinámico: const FormData = (await import('form-data')).default. No funciona con import estático arriba del archivo.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn2r9brr_j",
+    "content": "Luis prefiere qwen/qwen2.5-72b-instruct sobre otros modelos gratuitos para texto en español (letras de canciones, correcciones). Confirmado: 0 errores vs 2-3 de otros.",
+    "type": "preferencia",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T05:38:40.983+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj2_0",
+    "content": "Plugin clawy-memory creado como extensión de OpenClaw para auto-recall y auto-capture. Complementa LobsterMind, no lo reemplaza. Ubicación: ~/.openclaw/extensions/clawy-memory/. Usa Supabase como storage. Registrado como kind 'extension' (no 'memory') porque el slot 'memory' ya lo ocupa LobsterMind.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.91+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_1",
+    "content": "ERROR #26: Commits de git se hacían desde email incorrecto (no clawaxia@gmail.com) causando 'The Deployment was blocked because GitHub could not associate the committer with a GitHub user' en Vercel Hobby. Solución: git config --global user.email 'clawaxia@gmail.com'. Cada sesión nueva pierde la configuración.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_2",
+    "content": "El hook agent_end de OpenClaw no se dispara para plugins tipo 'extension'. En cambio, message_sent y message_received SÍ se disparan. El plugin usa estos eventos para auto-capture con delay de 1s.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_3",
+    "content": "message_received hook devuelve message.role: undefined. El contenido del mensaje está en otro path. Necesita verificar la estructura real del objeto message para extraer el texto.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_4",
+    "content": "Cambios en plugin TypeScript no se recargan con restart normal del gateway. Puede haber caché de transpilación. Para forzar reload puede necesitarse limpiar ~/.cache o reinstalar el plugin.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_5",
+    "content": "Tabla autoaprendizaje en Supabase tiene columna 'source' (TEXT DEFAULT 'manual') para distinguir memorias autoguardadas por el plugin ('autoguardado') de las creadas manualmente. Luis la agregó manualmente via SQL.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_6",
+    "content": "OpenClaw actualizado a 2026.3.22. Mejoras: ClawHub marketplace, comando /btw, per-agent reasoning, OpenShell+SSH sandboxes, MiniMax M2.7, búsqueda Exa/Tavily/Firecrawl. Hay dos instalaciones: ~/.npm-global/bin/openclaw (nueva) y /usr/bin/openclaw (vieja).",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_7",
+    "content": "Plugin auto-capture: después de cada message_sent, delay 1s, luego clasificar turno con MiniMax M2.5 (Step Flash fallback). Solo guarda si el LLM determina que es digno de recordar (ERROR, REGLA, PREFERENCIA, etc).",
+    "type": "patron",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_8",
+    "content": "OpenClaw comprime contexto automáticamente cuando la conversación se hace larga (Compacting context...). El resumen captura lo general pero pierde detalles técnicos finos. Por eso los TXTs completos en Supabase son importantes.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_9",
+    "content": "Mejoras identificadas de repos de memoria: Nuggets (holographic memory + promote + forget), Hermes (context compression + session search), Supermemory (user profile). No hay mejoras de memoria en OpenClaw 2026.3.22.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_a",
+    "content": "Auto-archivar contexto antes de compact: idea para complementar la compresión de OpenClaw. Guardar copia completa en Supabase antes de que se pierda, para tener acceso a detalles finos después.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_b",
+    "content": "OpenClaw tiene slot único para kind 'memory'. Solo un plugin de memoria puede estar activo. Para coexistir con LobsterMind, clawy-memory se registró como kind 'extension' con hooks independientes.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_c",
+    "content": "Auto-capture del plugin aún no funciona completamente. Los hooks se disparan (agent_end, message_sent) pero la clasificación con MiniMax no llega a guardar en Supabase. Varios reinicios no han resuelto el problema — posible caché del gateway.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_d",
+    "content": "Clawy Memorias Web mejorada: autoaprendizaje ordenado por fecha (más reciente primero), filtros por source (Autoguardado/Manual/Todos), badges diferenciados (rojo errores, azul reforzados, verde autoguardados).",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_e",
+    "content": "Errores duplicados en Supabase: errores con mismo número (ERROR #23 x3, #24 x3, #25 x2, #27 x2) fueron organizados. Duplicados改成 '→ REFORZADO: Ver ERROR #X' para fortalecer el original en lugar de borrar.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3jkhj4_f",
+    "content": "Los hooks de OpenClaw pueden no estar conectados al hookRunner interno si el plugin no usa el SDK helper correcto (definePluginEntry). Los hooks registrados con api.on() funcionan para before_agent_start pero agent_end no se dispara.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T18:51:10.912+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3p56tc",
+    "content": "SESSION 2026-03-23: Fix auto-capture LobsterMind→Supabase. Bugs fixeados: 1) campo id faltante en INSERT de Supabase (fix: agregar nanoid). 2) clawy-memory plugin interfería con LobsterMind (fix: removido de plugins.allow). 3) Tablas SQLite no existían (fix: CREATE TABLE manual). Resultado: auto-capture funciona 100%, DeepSeek clasifica reglas/preferencias/errores y guarda en Supabase con source:autoguardado. Filtra mensajes normales. 5/5 tests pasados. clawy-memory desactivado. Requiere deploy con clawaxia@gmail.com.",
+    "type": "sesion",
+    "confidence": 1,
+    "tags": "#sesion #lobstermind #fix #supabase",
+    "created_at": "2026-03-23T21:27:14.880Z",
+    "updated_at": "2026-03-23T21:27:14.880Z"
+  },
+  {
+    "id": "mem_mn3s434s_0",
+    "content": "El plugin clawy-memory usaba kind: \"extension\" mientras supermemory (github.com/supermemoryai/openclaw-supermemory) usa kind: \"memory\". Los hooks agent_end/before_agent_start solo disparan confiablemente con kind: \"memory\". Esa era la causa raíz del auto-capture roto.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T22:50:22.3+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3s434s_1",
+    "content": "OpenClaw selecciona UN solo plugin kind: \"memory\" como activo. Si clawy-memory también fuera \"memory\", competiría con LobsterMind. La solución correcta: merge de auto-capture dentro de LobsterMind (ya es kind: \"memory\").",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T22:50:22.3+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3s434s_2",
+    "content": "LobsterMind tiene bug SQL: SELECT de plugin_meta antes de CREATE IF NOT EXISTS (el CREATE está en línea 455 pero el SELECT falla en 451). Fix: mover CREATE antes del SELECT. Causa: table plugin_meta no existe al cargar.",
+    "type": "error",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T22:50:22.3+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3s434s_3",
+    "content": "Nueva sesión: nombre = \"Sesión del día — HH:MM CDT\" para distinguir múltiples sesiones por día. Formato: TZ='America/Mexico_City' date +%H:%M",
+    "type": "regla",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T22:50:22.3+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3s434s_4",
+    "content": "Artículo Atlas/MoltBrain: El breakthrough fue QUITAR, no agregar. \"Drunk agent problem\" — pasado 60% del contexto el agente degrada. La J-Curve de AI: destruye productividad primero, mejora después. El feedback loop es lo que hace compound.",
+    "type": "leccion",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T22:50:22.3+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  },
+  {
+    "id": "mem_mn3s434s_5",
+    "content": "Backup de clawy-memory creado en https://github.com/Clawyc2/clawy-memory-backup (privado) por si se necesita revisar después.",
+    "type": "proyecto",
+    "confidence": 0.9,
+    "tags": null,
+    "created_at": "2026-03-23T22:50:22.3+00:00",
+    "updated_at": "2026-03-24 05:10:12"
+  }
+]

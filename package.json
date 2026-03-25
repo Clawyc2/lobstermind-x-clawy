@@ -1,0 +1,43 @@
+{
+  "name": "lobstermind-memory",
+  "version": "1.0.0",
+  "description": "Long-term memory plugin for OpenClaw with SQLite storage, semantic search, and Obsidian sync",
+  "author": "Paolozky",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pnll1991/lobstermind-memory"
+  },
+  "keywords": [
+    "openclaw",
+    "plugin",
+    "memory",
+    "long-term-memory",
+    "sqlite",
+    "embeddings",
+    "obsidian",
+    "ai-assistant"
+  ],
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests specified\" && exit 0",
+    "postinstall": "node postinstall.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.6.2"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "openclaw": {
+    "pluginId": "lobstermind-memory",
+    "minOpenClawVersion": "2026.3.7",
+    "displayName": "LobsterMind Memory",
+    "category": "memory"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
