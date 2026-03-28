@@ -879,14 +879,14 @@ export default {
         try {
           const nativePath = join(ws, 'MEMORY.md');
           const nativeEntry = `- [${type}] ${content} (confidence: ${conf.toFixed(2)})\n`;
-          let nativeContent = '';
+          let content = '';
           if (existsSync(nativePath)) {
-            nativeContent = readFileSync(nativePath, 'utf-8');
+            content = readFileSync(nativePath, 'utf-8');
           } else {
             writeFileSync(nativePath, '# Memories\n\nAuto-created by LobsterMind Memory plugin\n\n', 'utf-8');
-            nativeContent = '';
+            content = '';
           }
-          if (!nativeContent.includes(nativeEntry.trim())) {
+          if (!content.includes(nativeEntry.trim())) {
             appendFileSync(nativePath, nativeEntry, 'utf-8');
             console.log('[lobstermind] ✅ Synced to MEMORY.md');
           }
