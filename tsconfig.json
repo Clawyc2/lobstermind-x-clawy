@@ -13,6 +13,6 @@
     "noEmit": false,
     "types": ["node"]
   },
-  "include": ["index.ts"],
+  "include": ["index.ts", "skill-forge.ts"],
   "exclude": ["node_modules", "dist"]
 }

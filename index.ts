@@ -6,6 +6,7 @@ import Database from 'better-sqlite3';
 import { createHash } from 'crypto';
 import { existsSync, mkdirSync, writeFileSync, appendFileSync, readFileSync, unlinkSync, statSync } from 'fs';
 import { join } from 'path';
+import { trackToolCall, getSkillCandidates, forgeSkill, findRelevantSkills, patchSkill, incrementSkillUsage, listSkills, initSkillForge } from './skill-forge';
 
 // ============================================================================
 // CONFIGURACIÓN DEL PLUGIN
@@ -309,6 +310,17 @@ export default {
       CREATE INDEX IF NOT EXISTS idx_cluster_members_memory ON cluster_members(memory_id);
       CREATE INDEX IF NOT EXISTS idx_cluster_members_cluster ON cluster_members(cluster_id);
     `);
+
+    // Sprint 1 migrations: add importance, tier, content_hash, access_count
+    const _migrations = [
+      "ALTER TABLE memories ADD COLUMN importance REAL NOT NULL DEFAULT 0",
+      "ALTER TABLE memories ADD COLUMN tier TEXT NOT NULL DEFAULT 'draft'",
+      "ALTER TABLE memories ADD COLUMN content_hash TEXT",
+      "ALTER TABLE memories ADD COLUMN access_count INTEGER NOT NULL DEFAULT 0",
+    ];
+    for (const _sql of _migrations) {
+      try { db.exec(_sql); } catch (_e: any) { /* column already exists */ }
+    }
 
     // ========================================================================
     // SISTEMA DE EMBEDDINGS MULTI-PROVIDER
@@ -721,6 +733,52 @@ export default {
     // GUARDADO DE MEMORIAS
     // ========================================================================
 
+    // ========================================================================
+    // AUTO-CATEGORIZACIÓN (Sprint 4)
+    // ========================================================================
+
+    const KNOWN_PROJECTS = ['DOGGY', 'clawy-archives', 'clawy-memorias-web', 'doggy-bot', 'doggy-onramp', 'doggy-royale', 'doggy-signal', 'lyrics-bot', 'sati-academy', 'tb24', 'NEWTB24', 'LobsterMind', 'Moltbook'];
+
+    const CATEGORY_KEYWORDS: Record<string, string[]> = {
+      '#error': ['error', 'fallo', 'rompi', 'bug', 'crash', 'no funciona', 'fix'],
+      '#leccion': ['lección', 'leccion', 'aprendí', 'aprendi', 'no volver', 'regla', 'nunca', 'siempre'],
+      '#patron': ['patrón', 'patron', 'preferencia', 'siempre que', 'cada vez que', 'tiende'],
+      '#decision': ['decisión', 'decision', 'decidimos', 'elegimos', 'optamos', 'aprobé', 'aprobe'],
+      '#preferencia': ['prefiere', 'le gusta', 'no le gusta', 'quiere', 'no quiere'],
+    };
+
+    const autoCategorize = (content: string, existingTags?: string): string => {
+      const lower = content.toLowerCase();
+      const newTags: string[] = [];
+
+      // Detect category tags
+      for (const [tag, keywords] of Object.entries(CATEGORY_KEYWORDS)) {
+        if (keywords.some(kw => lower.includes(kw))) {
+          newTags.push(tag);
+        }
+      }
+
+      // Detect project tags
+      for (const proj of KNOWN_PROJECTS) {
+        if (lower.includes(proj.toLowerCase())) {
+          newTags.push(`#proyecto:${proj}`);
+        }
+      }
+
+      if (newTags.length === 0) return existingTags || '';
+
+      // Concatenate with existing tags
+      const existing = (existingTags || '').split(/[,;\s]+/).map(t => t.trim()).filter(t => t.length > 0);
+      const combined = [...new Set([...existing, ...newTags])];
+      const finalTags = combined.join(', ');
+
+      return finalTags;
+    };
+
+    // ========================================================================
+    // GUARDADO DE MEMORIAS
+    // ========================================================================
+
     const save = async (content: string, type = 'MANUAL', conf = 0.9, tags?: string) => {
       if (isSensitiveData(content)) {
         console.log('[lobstermind] ❌ Save blocked: sensitive data detected');
@@ -735,16 +793,50 @@ export default {
       }
 
       const id = createHash('sha256').update(content).digest('hex').slice(0, 16);
+      const contentHash = createHash('sha256').update(content.trim().toLowerCase()).digest('hex');
       const now = new Date().toISOString();
 
       // Embedding asíncrono
       const embedding = await embed(content);
 
+      // Auto-categorización (Sprint 4) - solo para inserts nuevos
+      const categorizedTags = autoCategorize(content, tags || undefined);
+      if (categorizedTags !== (tags || '')) {
+        console.log(`[lobstermind:autocategorize] ${createHash('sha256').update(content).digest('hex').slice(0, 16)} → tags: ${categorizedTags}`);
+      }
+      tags = categorizedTags;
+
+      // Auto-dedup: check recent memories for similarity
+      try {
+        const recent = db.prepare('SELECT id, content, embedding, importance FROM memories ORDER BY created_at DESC LIMIT 100').all() as any[];
+        for (const m of recent) {
+          const existingEmb = JSON.parse(m.embedding || '[]');
+          if (existingEmb.length === 0) continue;
+          const sim = calculateCosineSimilarity(embedding, existingEmb);
+          if (sim > 0.85) {
+            // Merge: keep longer content, boost importance
+            const mergedContent = content.length > (m.content || '').length ? content : m.content;
+            const newImportance = (m.importance || 0) + 5;
+            db.prepare('UPDATE memories SET content = ?, importance = ?, updated_at = ?, content_hash = ? WHERE id = ?')
+              .run(mergedContent, newImportance, now, contentHash, m.id);
+            console.log('[lobstermind] 🔄 Dedup merge (sim>' + '0.85):', m.id);
+            return m.id;
+          } else if (sim > 0.7) {
+            // Related: boost importance, continue with INSERT
+            db.prepare('UPDATE memories SET importance = COALESCE(importance, 0) + 3 WHERE id = ?')
+              .run(m.id);
+            console.log('[lobstermind] 🔗 Related memory boosted (sim>' + '0.7):', m.id);
+          }
+        }
+      } catch (_dedupErr: any) {
+        // Non-fatal: continue with insert
+      }
+
       try {
         db.prepare(`
-          INSERT OR REPLACE INTO memories (id, content, type, confidence, tags, embedding, embedding_provider, embedding_dimensions, created_at, updated_at)
-          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        `).run(id, content, type, conf, tags || null, JSON.stringify(embedding), embeddingProvider, embedding.length, now, now);
+          INSERT OR REPLACE INTO memories (id, content, type, confidence, tags, embedding, embedding_provider, embedding_dimensions, created_at, updated_at, importance, tier, content_hash, access_count)
+          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        `).run(id, content, type, conf, tags || null, JSON.stringify(embedding), embeddingProvider, embedding.length, now, now, 0, 'draft', contentHash, 0);
         console.log('[lobstermind] Saved [' + type + ']:', content.slice(0, 40));
       } catch (error: any) {
         console.error('[lobstermind] DB error (save):', error.message);
@@ -1047,36 +1139,180 @@ export default {
     // BÚSQUEDA SEMÁNTICA
     // ========================================================================
 
+    // ========================================================================
+    // MULTI-TIER SEARCH HELPERS (Sprint 2)
+    // ========================================================================
+
+    const normalizeQuery = (q: string): string => q.trim().toLowerCase();
+
+    // Tier 2: Vector-server semantic search
+    const searchVectorServer = async (q: string): Promise<any[]> => {
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 5000);
+        const res = await fetch(`http://127.0.0.1:3456/search?q=${encodeURIComponent(q)}`, {
+          signal: controller.signal,
+        });
+        clearTimeout(timeoutId);
+        if (!res.ok) return [];
+        const data = await res.json();
+        if (!Array.isArray(data)) return [];
+        // Adjust scores from vector-server (normalize to our scoring range)
+        return data.map((r: any) => ({
+          id: r.id || `vec_${Math.random().toString(36).slice(2, 10)}`,
+          content: r.content || r.text || r.description || '',
+          type: 'VECTOR_SEMANTIC',
+          score: Math.min((r.score || r.similarity || 0.5) * 0.9, 1.0),
+          confidence: r.score || r.similarity || 0.5,
+          source: 'tier2-vector',
+        }));
+      } catch (e: any) {
+        console.log(`[lobstermind:search] Tier 2 (vector-server) unavailable: ${e.message}`);
+        return [];
+      }
+    };
+
+    // Tier 3: Supabase session_txts deep search
+    const searchSupabase = async (q: string, remaining: number): Promise<any[]> => {
+      try {
+        const supabaseUrl = env.SUPABASE_URL || process.env.SUPABASE_URL || '';
+        const supabaseKey = env.SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || '';
+        if (!supabaseUrl || !supabaseKey) return [];
+
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 10000);
+        const url = `${supabaseUrl}/rest/v1/session_txts?select=id,description,content&content=ilike.*${encodeURIComponent(q)}*&limit=${Math.min(remaining, 10)}`;
+        const res = await fetch(url, {
+          headers: { 'apikey': supabaseKey, 'Authorization': `Bearer ${supabaseKey}` },
+          signal: controller.signal,
+        });
+        clearTimeout(timeoutId);
+        if (!res.ok) return [];
+        const rows = await res.json();
+        if (!Array.isArray(rows)) return [];
+        return rows.map((r: any) => ({
+          id: r.id || `supa_${Math.random().toString(36).slice(2, 10)}`,
+          content: (r.content || '').slice(0, 500),
+          type: 'SESSION_TXT',
+          score: 0.3, // low score — these are deep fallback results
+          confidence: 0.3,
+          description: r.description || '',
+          source: 'tier3-supabase',
+        }));
+      } catch (e: any) {
+        console.log(`[lobstermind:search] Tier 3 (supabase) unavailable: ${e.message}`);
+        return [];
+      }
+    };
+
+    // ========================================================================
+    // BÚSQUEDA SEMÁNTICA — MULTI-TIER (Sprint 2)
+    // ========================================================================
+
     async function search(q: string, k?: number) {
       try {
         const limit = k || config.searchLimit || 8;
         const threshold = config.searchThreshold || 0.3;
+        const normalizedKey = `${normalizeQuery(q)}_${limit}`;
 
-        const cacheKey = `${q.substring(0, 100)}_${limit}`;
-        const cached = searchCache.get(cacheKey);
+        // === TIER 0: Exact cache (~0ms) ===
+        const cached = searchCache.get(normalizedKey);
         if (cached && Date.now() - cached.timestamp < SEARCH_CACHE_TTL) {
+          console.log('[lobstermind:search] Resolved at Tier 0 (cache)');
           return cached.data;
         }
 
+        // === TIER 1: LobsterMind keyword + composite scoring (~100ms) ===
         const qe = await embed(q);
         const allMemories = db.prepare('SELECT * FROM memories').all() as any[];
 
-        const scored = allMemories.map(m => ({
-          ...m,
-          score: calculateCosineSimilarity(qe, JSON.parse(m.embedding || '[]'))
-        }));
+        const scored = allMemories.map(m => {
+          const semanticSim = calculateCosineSimilarity(qe, JSON.parse(m.embedding || '[]'));
+          // Composite scoring: 0.6*semantic + 0.25*importance_norm + 0.15*recency, then tier_boost
+          const importanceNorm = Math.min(((m.importance || 0)) / 20, 1);
+          let recency = 0.15; // default for missing dates
+          try {
+            const daysSince = (Date.now() - new Date(m.created_at).getTime()) / 86400000;
+            recency = Math.exp(-daysSince / 30);
+          } catch (_e) { /* use default */ }
+          const tierBoost = (m.tier === 'core') ? 1.15 : (m.tier === 'validated') ? 1.08 : 1.0;
+          const compositeScore = (0.6 * semanticSim + 0.25 * importanceNorm + 0.15 * recency) * tierBoost;
+          return { ...m, score: compositeScore, _semanticSim: semanticSim };
+        });
 
-        const results = scored
-          .filter(m => m.score >= threshold)
+        let results = scored
+          .filter(m => m._semanticSim >= 0.2 && m.score >= threshold)
           .sort((a, b) => b.score - a.score)
           .slice(0, limit);
 
-        searchCache.set(cacheKey, { data: results, timestamp: Date.now() });
+        // Check if Tier 1 is sufficient (best score > 0.85)
+        const topScore = results.length > 0 ? results[0].score : 0;
+        if (topScore > 0.85) {
+          searchCache.set(normalizedKey, { data: results, timestamp: Date.now() });
+          console.log(`[lobstermind:search] Resolved at Tier 1 (score: ${topScore.toFixed(3)})`);
+          return results;
+        }
+
+        // === TIER 2: Vector-server semantic (~500ms) ===
+        if (topScore < 0.5 || results.length < limit) {
+          console.log('[lobstermind:search] Escalating to Tier 2 (vector-server)...');
+          const vectorResults = await searchVectorServer(q);
+          if (vectorResults.length > 0) {
+            // Merge, dedup by content similarity, keep best scores
+            const existingContents = new Set(results.map(r => (r.content || '').slice(0, 80).toLowerCase()));
+            for (const vr of vectorResults) {
+              if (!existingContents.has((vr.content || '').slice(0, 80).toLowerCase())) {
+                results.push(vr);
+                existingContents.add((vr.content || '').slice(0, 80).toLowerCase());
+              }
+            }
+            results.sort((a, b) => b.score - a.score);
+            results = results.slice(0, limit);
+          }
+        }
+
+        // Check if Tier 2 was sufficient
+        const topScore2 = results.length > 0 ? results[0].score : 0;
+        if (topScore2 > 0.85 || results.length >= limit) {
+          searchCache.set(normalizedKey, { data: results, timestamp: Date.now() });
+          console.log(`[lobstermind:search] Resolved at Tier 2 (score: ${topScore2.toFixed(3)}, count: ${results.length})`);
+          return results;
+        }
+
+        // === TIER 3: Supabase session_txts deep search (~2s) ===
+        if (results.length < limit) {
+          console.log('[lobstermind:search] Escalating to Tier 3 (supabase txts)...');
+          const remaining = limit - results.length;
+          const supabaseResults = await searchSupabase(q, remaining);
+          if (supabaseResults.length > 0) {
+            results.push(...supabaseResults);
+            results.sort((a, b) => b.score - a.score);
+            results = results.slice(0, limit);
+          }
+        }
+
+        searchCache.set(normalizedKey, { data: results, timestamp: Date.now() });
+
+        const resolvedTier = topScore > 0.85 ? 1 : (topScore2 > 0.5 ? 2 : (results.some((r: any) => r.source === 'tier3-supabase') ? 3 : (results.length > 0 ? 2 : 0)));
+        console.log(`[lobstermind:search] Resolved at Tier ${resolvedTier} (results: ${results.length})`);
 
         return results;
       } catch (error: any) {
         console.error('[lobstermind] DB error (search):', error.message);
         return [];
+      }
+    }
+
+    // ========================================================================
+    // BOOST ON ACCESS (importance tracking)
+    // ========================================================================
+
+    async function boostOnAccess(id: string): Promise<void> {
+      try {
+        db.prepare('UPDATE memories SET importance = COALESCE(importance, 0) + 3, access_count = COALESCE(access_count, 0) + 1, updated_at = ? WHERE id = ?')
+          .run(new Date().toISOString(), id);
+      } catch (_e: any) {
+        // Non-fatal
       }
     }
 
@@ -1344,6 +1580,32 @@ Formato exacto:
           const content = typeof message.content === 'string' ? message.content : JSON.stringify(message.content);
           // Acumular mensaje en lugar de clasificar inmediatamente
           pendingMessages.push(content);
+
+          // Skill Forge: tracking de tool calls
+          try {
+            if (typeof message.content === 'object' && Array.isArray(message.content)) {
+              for (const block of message.content) {
+                if (block?.type === 'tool_use' && block?.name) {
+                  trackToolCall(block.name, content);
+                }
+              }
+            }
+            // También detectar tool_calls en formato JSON string
+            if (typeof message.content === 'string' && message.content.includes('"tool_calls"')) {
+              try {
+                const parsed = JSON.parse(message.content);
+                if (Array.isArray(parsed)) {
+                  for (const block of parsed) {
+                    if (block?.type === 'tool_use' && block?.name) {
+                      trackToolCall(block.name, message.content);
+                    }
+                  }
+                }
+              } catch (_) { /* no es JSON válido, ignorar */ }
+            }
+          } catch (e: any) {
+            console.error('[skill-forge:track] Error:', e.message);
+          }
           turnCounter++;
 
           // Cada NUDGE_INTERVAL turnos, clasificar todo el batch
@@ -1466,7 +1728,7 @@ Formato exacto:
     };
 
     if (api.on) {
-      api.on('before_prompt_build', (event: any, ctx: any) => {
+      api.on('before_prompt_build', async (event: any, ctx: any) => {
         const messages = ctx?.messages || [];
         const userMessages = messages.filter((m: any) => m?.role === 'user' && m?.content);
         const userTurns = userMessages.length;
@@ -1477,10 +1739,31 @@ Formato exacto:
         const autoItems = loadAutoaprendizaje(isBootstrap ? 'bootstrap' : 'top');
 
         const context = formatInjectContext(autoItems, []);
-        if (!context) return;
+
+        // Skill Forge: auto-inject skills relevantes
+        let skillContext = '';
+        try {
+          const firstUserMsg = userMessages[0]?.content;
+          const queryText = typeof firstUserMsg === 'string' ? firstUserMsg : JSON.stringify(firstUserMsg);
+          if (queryText && queryText.length > 5) {
+            const relevantSkills = await findRelevantSkills(queryText, 3);
+            if (relevantSkills.length > 0) {
+              const skillLines = relevantSkills.map(s =>
+                `- **${s.name}** (${s.slug}): ${s.description} [v${s.version}, usado ${s.times_used}x]`
+              );
+              skillContext = `\n<auto-skills>\n### Skills relevantes:\n${skillLines.join('\n')}\n</auto-skills>`;
+              console.log(`[skill-forge:inject] ${relevantSkills.length} skills inyectados`);
+            }
+          }
+        } catch (e: any) {
+          console.error('[skill-forge:inject] Error:', e.message);
+        }
+
+        const fullContext = context + skillContext;
+        if (!fullContext) return;
 
         console.log(`[lobstermind:inject] ${isBootstrap ? 'BOOTSTRAP' : 'TOP'}: ${autoItems.length} auto items`);
-        return { prependContext: context };
+        return { prependContext: fullContext };
       });
       console.log('[lobstermind] Registered hook: before_prompt_build (auto-inject)');
     }
@@ -1518,6 +1801,7 @@ Formato exacto:
           const total = db.prepare('SELECT COUNT(*) as c FROM memories').get() as any;
           const clusters = db.prepare('SELECT COUNT(*) as c FROM memory_clusters').get() as any;
           const relations = db.prepare('SELECT COUNT(*) as c FROM memory_relations').get() as any;
+          const archived = db.prepare("SELECT COUNT(*) as c FROM memories WHERE tier = 'archived'").get() as any;
 
           console.log('\n📊 Estadísticas:\n');
           console.log(`  Memorias: ${total.c}`);
@@ -1526,6 +1810,27 @@ Formato exacto:
           console.log(`  Provider: ${embeddingProvider}`);
           console.log(`  Cache: ${embeddingCache.size} embeddings`);
           console.log(`  Auto-capture: ${autoCaptureStats.totalCaptured}/${autoCaptureStats.totalProcessed}`);
+          console.log(`  Archivadas: ${archived.c}`);
+
+          // Sprint 4: Stats por categoría
+          const allMemories = db.prepare('SELECT tags FROM memories').all() as any[];
+          const tagCounts: Record<string, number> = {};
+          let noCategory = 0;
+
+          for (const m of allMemories) {
+            const t = (m.tags || '').toString().trim();
+            if (!t || t.length === 0) { noCategory++; continue; }
+            const tagList = t.split(/[,;\s]+/).map((s: string) => s.trim()).filter((s: string) => s.startsWith('#') && s.length > 1);
+            if (tagList.length === 0) { noCategory++; continue; }
+            for (const tag of tagList) {
+              tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+            }
+          }
+
+          const sorted = Object.entries(tagCounts).sort((a, b) => b[1] - a[1]);
+          console.log('\n  📂 Top categorías:');
+          sorted.slice(0, 5).forEach(([tag, count]) => console.log(`    ${tag}: ${count}`));
+          console.log(`  📭 Sin categoría: ${noCategory}`);
         });
 
         c.command('embeddings').action(() => {
@@ -1826,8 +2131,289 @@ Formato exacto:
           console.log('\n' + '='.repeat(50));
           console.log('Health check completed!\n');
         });
+        // ========================================================================
+        // SPRINT 3: NIGHTLY REVIEW
+        // ========================================================================
+
+        c.command('nightly-review').action(() => {
+          const now = new Date().toISOString();
+          const summariesDir = join(ws, 'memory', 'v2.2');
+          const projectsDir = join(summariesDir, 'proyectos');
+          const logPath = join(ws, 'memory', 'nightly-review.log');
+
+          // Ensure directories exist
+          [summariesDir, projectsDir].forEach(d => {
+            if (!existsSync(d)) mkdirSync(d, { recursive: true });
+          });
+
+          console.log('\n🌙 Nightly Review\n');
+          console.log('='.repeat(50));
+
+          // 1. Read all memories
+          const allMemories = db.prepare('SELECT * FROM memories ORDER BY created_at DESC').all() as any[];
+          console.log(`📚 Total memorias: ${allMemories.length}`);
+
+          // 2. Group by tags (or type if no tags)
+          const groups: Record<string, any[]> = {};
+          for (const mem of allMemories) {
+            let category: string;
+            const tags = (mem.tags || '').toString();
+            if (tags && tags.trim().length > 0) {
+              category = tags.split(',').map((t: string) => t.trim()).filter((t: string) => t.length > 0)[0];
+            } else {
+              category = mem.type || 'general';
+            }
+            if (!groups[category]) groups[category] = [];
+            groups[category].push(mem);
+          }
+
+          // 3. Generate summaries per category (only groups with 3+ memories)
+          let summariesGenerated = 0;
+          for (const [category, memories] of Object.entries(groups)) {
+            if (memories.length < 3) continue;
+
+            const safeName = category.replace(/[^a-zA-Z0-9áéíóúñ_-]/g, '_').toLowerCase();
+            const filePath = join(summariesDir, `_index_${safeName}.md`);
+
+            // Sort by created_at descending
+            const sorted = [...memories].sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
+
+            const lines: string[] = [
+              `# Resumen: ${category}`,
+              ``,
+              `> Generado automáticamente por LobsterMind Nightly Review`,
+              `> Fecha: ${now}`,
+              `> Total memorias: ${sorted.length}`,
+              ``,
+              `## Memorias`,
+              ``,
+            ];
+
+            for (const mem of sorted) {
+              const date = mem.created_at ? mem.created_at.split('T')[0] : 'unknown';
+              lines.push(`### [${mem.type}] ${date}`);
+              lines.push('');
+              lines.push(mem.content);
+              lines.push('');
+              if (mem.importance) lines.push(`*Importancia: ${mem.importance} | Tier: ${mem.tier || 'draft'}*`);
+              lines.push('---');
+              lines.push('');
+            }
+
+            writeFileSync(filePath, lines.join('\n'), 'utf-8');
+            summariesGenerated++;
+            console.log(`  📝 Resumen: ${category} (${sorted.length} memorias)`);
+          }
+
+          // 4. Archive stale memories
+          const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
+          const staleResult = db.prepare(
+            "UPDATE memories SET tier = 'archived', updated_at = ? WHERE access_count = 0 AND importance < 5 AND created_at < ? AND tier != 'archived'"
+          ).run(now, thirtyDaysAgo);
+          const archivedCount = staleResult.changes;
+
+          console.log(`  🗃️ Memorais archivadas: ${archivedCount}`);
+
+          // 5. Generate nightly log
+          const logEntry = [
+            `[${now}]`,
+            `  Memorias revisadas: ${allMemories.length}`,
+            `  Resúmenes generados: ${summariesGenerated}`,
+            `  Memorias archivadas: ${archivedCount}`,
+            `  Categorías procesadas: ${Object.keys(groups).length}`,
+            '',
+          ].join('\n');
+
+          try {
+            let existingLog = '';
+            if (existsSync(logPath)) {
+              existingLog = readFileSync(logPath, 'utf-8');
+            }
+            writeFileSync(logPath, logEntry + existingLog, 'utf-8');
+          } catch (_e: any) {
+            // Non-fatal
+          }
+
+          console.log('\n' + '='.repeat(50));
+          console.log(`✅ Nightly review completado!`);
+          console.log(`   Revisadas: ${allMemories.length}`);
+          console.log(`   Resúmenes: ${summariesGenerated}`);
+          console.log(`   Archivadas: ${archivedCount}`);
+          console.log(`   Log: ${logPath}\n`);
+        });
+
+        // ========================================================================
+        // SPRINT 3: PROJECT STATUS
+        // ========================================================================
+
+        c.command('project-status <name>').action((projectName: string) => {
+          const projectsDir = join(ws, 'memory', 'v2.2', 'proyectos', projectName);
+          if (!existsSync(projectsDir)) mkdirSync(projectsDir, { recursive: true });
+
+          const now = new Date().toISOString();
+
+          // Search memories by tag or content mentioning the project
+          const likePattern = `%${projectName}%`;
+          const tagPattern = `%proyecto:${projectName}%`;
+          const projectMemories = db.prepare(
+            "SELECT * FROM memories WHERE tags LIKE ? OR content LIKE ? ORDER BY created_at DESC"
+          ).all(tagPattern, likePattern) as any[];
+
+          // Get last 5 relevant
+          const recent5 = projectMemories.slice(0, 5);
+
+          // Determine status based on recency
+          let status = 'completado';
+          if (projectMemories.length > 0) {
+            const lastDate = new Date(projectMemories[0].created_at);
+            const daysSince = (Date.now() - lastDate.getTime()) / 86400000;
+            if (daysSince < 7) status = 'activo';
+            else if (daysSince < 30) status = 'pausado';
+          }
+
+          // Build _estado.md
+          const lines: string[] = [
+            `# Estado del Proyecto: ${projectName}`,
+            ``,
+            `> Última actualización: ${now}`,
+            `> Generado por LobsterMind`,
+            ``,
+            `## Resumen`,
+            ``,
+            `- **Estado:** ${status}`,
+            `- **Total memorias vinculadas:** ${projectMemories.length}`,
+            `- **Última actividad:** ${projectMemories.length > 0 ? projectMemories[0].created_at : 'N/A'}`,
+            ``,
+            `## Últimas 5 memorias relevantes`,
+            ``,
+          ];
+
+          for (const mem of recent5) {
+            const date = mem.created_at ? mem.created_at.split('T')[0] : 'unknown';
+            lines.push(`- **[${mem.type}]** ${date}: ${mem.content}`);
+          }
+
+          if (recent5.length === 0) {
+            lines.push('_No hay memorias vinculadas a este proyecto._');
+          }
+
+          lines.push('');
+          lines.push('---');
+          lines.push(`*Generado por LobsterMind v2.3*`);
+          lines.push('');
+
+          const estadoPath = join(projectsDir, '_estado.md');
+          writeFileSync(estadoPath, lines.join('\n'), 'utf-8');
+
+          console.log(`\n📋 Estado del proyecto: ${projectName}\n`);
+          console.log(`  Estado: ${status}`);
+          console.log(`  Memorias vinculadas: ${projectMemories.length}`);
+          console.log(`  Última actividad: ${projectMemories.length > 0 ? projectMemories[0].created_at : 'N/A'}`);
+          console.log(`  Archivo: ${estadoPath}\n`);
+        });
+
       }, { commands: ['memories'] });
-      console.log('[lobstermind] CLI ready');
+
+      // ========================================================================
+      // SKILL FORGE CLI
+      // ========================================================================
+      api.registerCli(({program}: any) => {
+        const sf = program.command('skill-forge').description('Skill Forge - Auto-detección y forja de skills');
+
+        sf.command('list').action(async () => {
+          try {
+            const skills = await listSkills();
+            if (skills.length === 0) {
+              console.log('\n🔧 No hay skills forjados todavía\n');
+              return;
+            }
+            console.log(`\n🔨 Skills forjados (${skills.length}):\n`);
+            skills.forEach((s: any, i: number) => {
+              console.log(`${i + 1}. ${s.name} (${s.slug}) v${s.version} [${s.times_used}x usado]`);
+              if (s.description) console.log(`   ${s.description}`);
+            });
+          } catch (e: any) {
+            console.error('❌ Error:', e.message);
+          }
+        });
+
+        sf.command('forge <slug> <name> <description>').action(async (slug: string, name: string, description: string) => {
+          try {
+            const result = await forgeSkill({
+              slug, name, description,
+              steps: [],
+              toolsUsed: [],
+              lessons: [],
+              tags: [],
+            });
+            if (result.success) {
+              console.log(`\n✅ Skill "${name}" forjado como ${slug}\n`);
+            } else {
+              console.error(`\n❌ Error: ${result.error}\n`);
+            }
+          } catch (e: any) {
+            console.error('❌ Error:', e.message);
+          }
+        });
+
+        sf.command('search <query>').action(async (query: string) => {
+          try {
+            const results = await findRelevantSkills(query);
+            if (results.length === 0) {
+              console.log('\n🔍 No se encontraron skills relevantes\n');
+              return;
+            }
+            console.log(`\n🔍 Skills relevantes (${results.length}):\n`);
+            results.forEach((s: any, i: number) => {
+              console.log(`${i + 1}. ${s.name} (${s.slug}) v${s.version} [${s.times_used}x]`);
+              if (s.description) console.log(`   ${s.description}`);
+            });
+          } catch (e: any) {
+            console.error('❌ Error:', e.message);
+          }
+        });
+
+        sf.command('patch <slug>').option('--step <step>', 'Agregar paso').option('--lesson <lesson>', 'Agregar lección').option('--tool <tool>', 'Agregar tool').action(async (slug: string, opts: any) => {
+          try {
+            const additions: any = {};
+            if (opts.step) additions.steps = [opts.step];
+            if (opts.lesson) additions.lessons = [opts.lesson];
+            if (opts.tool) additions.tools = [opts.tool];
+
+            if (Object.keys(additions).length === 0) {
+              console.log('\n⚠️  Especifica al menos --step, --lesson o --tool\n');
+              return;
+            }
+
+            const result = await patchSkill(slug, additions);
+            if (result.success) {
+              console.log(`\n✅ Skill ${slug} parcheado → v${result.newVersion}\n`);
+            } else {
+              console.error(`\n❌ No se encontró skill: ${slug}\n`);
+            }
+          } catch (e: any) {
+            console.error('❌ Error:', e.message);
+          }
+        });
+
+        sf.command('candidates').action(() => {
+          try {
+            const candidates = getSkillCandidates();
+            if (candidates.length === 0) {
+              console.log('\n🔍 No hay candidatos a skill (necesitan 5+ tool calls en mismo tema)\n');
+              return;
+            }
+            console.log(`\n🎯 Candidatos a skill (${candidates.length}):\n`);
+            candidates.forEach((c, i) => {
+              console.log(`${i + 1}. Tema: ${c.topic} (${c.toolCount} tools)`);
+              console.log(`   Tools: ${c.tools.join(', ')}`);
+            });
+          } catch (e: any) {
+            console.error('❌ Error:', e.message);
+          }
+        });
+
+      }, { commands: ['skill-forge'] });
     }
 
     console.log(`[lobstermind] ✅ Loaded with provider: ${embeddingProvider}`);
@@ -1841,7 +2427,7 @@ Formato exacto:
 
     return {
       name: 'lobstermind-memory',
-      version: '2.2.0',
+      version: '2.3.0',
       unregister
     };
   }
